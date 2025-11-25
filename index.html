@@ -110,7 +110,18 @@
         
         @media (max-width: 768px) {
             header nav {
+                gap: 0;
+            }
+            
+            header nav a:not(.active) {
                 display: none;
+            }
+            
+            header nav a.active {
+                font-size: 0.7rem;
+                padding: 0.4rem 0.8rem;
+                background: rgba(198, 161, 87, 0.15);
+                border-radius: 3px;
             }
         }
 
@@ -777,7 +788,7 @@
             <a href="https://www.alides.org">Accueil</a>
             <a href="https://www.alides.org/executive-search-1">Executive Search</a>
             <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
-            <a href="https://www.linkedin.com/company/alides-africa" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/company/alides-executivesearch" target="_blank">LinkedIn</a>
         </div>
         <span class="footer-copy">© 2025 Alides. Tous droits réservés.</span>
     </div>

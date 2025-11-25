@@ -608,7 +608,18 @@
             }
             
             .header-nav {
+                gap: 0;
+            }
+            
+            .header-nav a:not(.active) {
                 display: none;
+            }
+            
+            .header-nav a.active {
+                font-size: 0.7rem;
+                padding: 0.4rem 0.8rem;
+                background: rgba(198, 161, 87, 0.15);
+                border-radius: 3px;
             }
             
             .hero {
@@ -739,10 +750,10 @@
         <div class="header-inner">
             <a href="https://www.alides.org" class="logo">Alides</a>
             <nav class="header-nav">
-                <a href="#">Executive Search</a>
-                <a href="#">Gouvernance</a>
-                <a href="#">Dossiers Stratégiques</a>
-                <a href="#">Contact</a>
+                <a href="https://www.alides.org/executive-search-1">Executive Search</a>
+                <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
+                <a href="https://www.alides.org/board-services">Board Services</a>
+                <a href="index.html" class="active">Knowledge Center</a>
             </nav>
         </div>
     </header>
