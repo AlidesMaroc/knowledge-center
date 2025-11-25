@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Center — Dossiers Stratégiques | Alides</title>
+    <meta name="description" content="Les Dossiers Stratégiques Alides analysent les transformations silencieuses qui redéfinissent le leadership, la gouvernance et la continuité des organisations au Maroc et en Afrique.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ================================
+           ALIDES KNOWLEDGE CENTER — HUB
+           Style Think Tank / Premium
+           ================================ */
+
+        :root {
+            --alides-midnight: #142036;
+            --alides-midnight-light: #1a2a45;
+            --alides-gold: #C6A157;
+            --alides-gold-dark: #9E7E3A;
+            --alides-ivory: #F7F5F2;
+            --alides-warm-white: #FDFCFA;
+            --alides-white: #ffffff;
+            --alides-text: #3A3A3A;
+            --alides-text-light: #666666;
+            --alides-border: rgba(20, 32, 54, 0.08);
+
+            --font-title: 'EB Garamond', Georgia, serif;
+            --font-body: 'EB Garamond', Georgia, serif;
+            --font-ui: 'Inter', -apple-system, sans-serif;
+
+            --max-width: 1100px;
+            --max-width-narrow: 720px;
+
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2.5rem;
+            --space-lg: 5rem;
+            --space-xl: 7rem;
+        }
+
+        /* RESET */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: var(--alides-ivory);
+            color: var(--alides-midnight);
+            font-family: var(--font-body);
+            font-size: 19px;
+            line-height: 1.75;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ==================== HEADER ==================== */
+        
+        header {
+            width: 100%;
+            background: var(--alides-midnight);
+            padding: 1.2rem 2rem;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+        
+        header .inner {
+            max-width: var(--max-width);
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header .logo {
+            color: var(--alides-white);
+            font-family: 'EB Garamond', Garamond, Georgia, serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            letter-spacing: 0;
+            text-decoration: none;
+        }
+        
+        header nav {
+            display: flex;
+            gap: 2.2rem;
+        }
+        
+        header nav a {
+            font-family: var(--font-ui);
+            color: rgba(247, 245, 242, 0.7);
+            text-decoration: none;
+            font-size: 0.72rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        
+        header nav a:hover,
+        header nav a.active {
+            color: var(--alides-white);
+        }
+        
+        @media (max-width: 768px) {
+            header nav {
+                display: none;
+            }
+        }
+
+        /* ==================== HERO ==================== */
+        
+        .hero {
+            background: var(--alides-white);
+            padding: calc(var(--space-xl) + 80px) 2rem var(--space-xl);
+            text-align: center;
+            border-bottom: 1px solid var(--alides-border);
+        }
+        
+        .hero-inner {
+            max-width: var(--max-width-narrow);
+            margin: auto;
+        }
+        
+        .hero-label {
+            font-family: var(--font-ui);
+            color: var(--alides-gold-dark);
+            font-size: 0.7rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-title {
+            font-family: var(--font-title);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 400;
+            color: var(--alides-midnight);
+            margin-bottom: 2rem;
+            line-height: 1.15;
+        }
+        
+        .hero-statement {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            font-weight: 400;
+            color: var(--alides-text);
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ==================== ÉDITO ==================== */
+        
+        .edito {
+            background: var(--alides-ivory);
+            padding: var(--space-lg) 2rem;
+            border-bottom: 1px solid var(--alides-border);
+        }
+        
+        .edito-inner {
+            max-width: var(--max-width-narrow);
+            margin: auto;
+        }
+        
+        .edito-label {
+            font-family: var(--font-ui);
+            color: var(--alides-gold-dark);
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .edito-content {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            color: var(--alides-text);
+            line-height: 1.85;
+        }
+        
+        .edito-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .edito-content p:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        .edito-signature {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--alides-border);
+            text-align: right;
+        }
+        
+        .edito-author {
+            font-family: var(--font-title);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--alides-midnight);
+            margin-bottom: 0.3rem;
+        }
+        
+        .edito-role {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            color: var(--alides-text-light);
+            letter-spacing: 0.03em;
+        }
+
+        /* ==================== DERNIER DOSSIER ==================== */
+        
+        .latest {
+            padding: var(--space-lg) 2rem;
+            background: var(--alides-midnight);
+        }
+        
+        .latest-inner {
+            max-width: var(--max-width);
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        @media (max-width: 900px) {
+            .latest-inner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        .latest-header {
+            position: sticky;
+            top: 120px;
+        }
+        
+        .latest-label {
+            font-family: var(--font-ui);
+            color: var(--alides-gold);
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        
+        .latest-quarter {
+            font-family: var(--font-ui);
+            color: rgba(255,255,255,0.5);
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.8rem;
+        }
+        
+        .latest-title {
+            font-family: var(--font-title);
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--alides-white);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .latest-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: rgba(247, 245, 242, 0.7);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .latest-cta {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            background: var(--alides-gold);
+            color: var(--alides-midnight);
+            font-family: var(--font-ui);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: background 0.3s ease;
+        }
+        
+        .latest-cta:hover {
+            background: var(--alides-white);
+        }
+        
+        .latest-articles {
+            list-style: none;
+        }
+        
+        .latest-article {
+            padding: 1.8rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .latest-article:last-child {
+            border-bottom: none;
+        }
+        
+        .latest-article-number {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            color: var(--alides-gold);
+            letter-spacing: 0.15em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .latest-article-title {
+            font-family: var(--font-title);
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--alides-white);
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+        }
+        
+        .latest-article-excerpt {
+            font-size: 0.95rem;
+            color: rgba(247, 245, 242, 0.6);
+            line-height: 1.6;
+        }
+
+        /* ==================== ARCHIVES ==================== */
+        
+        .archives {
+            padding: var(--space-lg) 2rem;
+            background: var(--alides-ivory);
+        }
+        
+        .archives-inner {
+            max-width: var(--max-width);
+            margin: auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-md);
+        }
+        
+        .section-label {
+            font-family: var(--font-ui);
+            color: var(--alides-gold-dark);
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+        }
+        
+        .section-title {
+            font-family: var(--font-title);
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--alides-midnight);
+        }
+        
+        .dossier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .dossier-card {
+            background: var(--alides-white);
+            padding: 2rem;
+            border: 1px solid var(--alides-border);
+            transition: border-color 0.3s ease;
+        }
+        
+        .dossier-card:hover {
+            border-color: rgba(20, 32, 54, 0.2);
+        }
+        
+        .dossier-quarter {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            color: var(--alides-text-light);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+        }
+        
+        .dossier-title {
+            font-family: var(--font-title);
+            font-size: 1.35rem;
+            font-weight: 500;
+            color: var(--alides-midnight);
+            margin-bottom: 0.6rem;
+            line-height: 1.3;
+        }
+        
+        .dossier-desc {
+            font-size: 0.95rem;
+            color: var(--alides-text-light);
+            margin-bottom: 1.2rem;
+            line-height: 1.55;
+        }
+        
+        .dossier-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            border-top: 1px solid var(--alides-border);
+        }
+        
+        .dossier-count {
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            color: var(--alides-text-light);
+        }
+        
+        .dossier-link {
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            color: var(--alides-midnight);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+            padding-bottom: 0.15rem;
+            border-bottom: 1px solid var(--alides-gold);
+            transition: border-color 0.3s ease;
+        }
+        
+        .dossier-link:hover {
+            border-color: var(--alides-midnight);
+        }
+
+        /* ==================== POURQUOI ==================== */
+        
+        .why {
+            padding: var(--space-lg) 2rem;
+            background: var(--alides-white);
+            border-top: 1px solid var(--alides-border);
+        }
+        
+        .why-inner {
+            max-width: var(--max-width);
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        @media (max-width: 800px) {
+            .why-inner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        .why-title {
+            font-family: var(--font-title);
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--alides-midnight);
+            line-height: 1.3;
+        }
+        
+        .why-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        @media (max-width: 600px) {
+            .why-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .why-item {
+            padding-left: 1rem;
+            border-left: 2px solid var(--alides-gold);
+        }
+        
+        .why-item-title {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--alides-midnight);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+        }
+        
+        .why-item-text {
+            font-size: 0.95rem;
+            color: var(--alides-text-light);
+            line-height: 1.6;
+        }
+
+        /* ==================== CTA ==================== */
+        
+        .cta {
+            padding: var(--space-md) 2rem;
+            background: var(--alides-midnight);
+            text-align: center;
+        }
+        
+        .cta-inner {
+            max-width: var(--max-width-narrow);
+            margin: auto;
+        }
+        
+        .cta-text {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            color: rgba(247, 245, 242, 0.8);
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            padding: 0.9rem 2.2rem;
+            background: transparent;
+            border: 1px solid var(--alides-gold);
+            color: var(--alides-gold);
+            font-family: var(--font-ui);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-btn:hover {
+            background: var(--alides-gold);
+            color: var(--alides-midnight);
+        }
+
+        /* ==================== FOOTER ==================== */
+        
+        footer {
+            background: var(--alides-midnight);
+            padding: 2.5rem 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        footer .inner {
+            max-width: var(--max-width);
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        footer .footer-logo {
+            font-family: 'EB Garamond', Garamond, Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--alides-white);
+            letter-spacing: 0;
+        }
+        
+        footer .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        footer .footer-links a {
+            color: rgba(247, 245, 242, 0.6);
+            text-decoration: none;
+            font-family: var(--font-ui);
+            font-size: 0.72rem;
+            letter-spacing: 0.05em;
+            transition: color 0.3s ease;
+        }
+        
+        footer .footer-links a:hover {
+            color: var(--alides-white);
+        }
+        
+        footer .footer-copy {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            color: rgba(247, 245, 242, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            footer .inner {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+            
+            footer .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="inner">
+        <a href="https://www.alides.org" class="logo">Alides</a>
+        <nav>
+            <a href="https://www.alides.org/executive-search-1">Executive Search</a>
+            <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
+            <a href="https://www.alides.org/board-services">Board Services</a>
+            <a href="#" class="active">Knowledge Center</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-inner">
+        <p class="hero-label">Knowledge Center</p>
+        <h1 class="hero-title">Dossiers Stratégiques</h1>
+        <p class="hero-statement">Les Dossiers Stratégiques Alides analysent les transformations silencieuses qui redéfinissent le leadership, la gouvernance et la continuité des organisations au Maroc et en Afrique.</p>
+    </div>
+</section>
+
+<!-- ÉDITO -->
+<section class="edito">
+    <div class="edito-inner">
+        <p class="edito-label">Éditorial</p>
+        <div class="edito-content">
+            <p>Il existe des moments où les organisations doivent regarder au-delà de la performance immédiate pour interroger ce qui soutient réellement leur continuité. Nous traversons précisément l'un de ces moments. Les transformations qui affectent aujourd'hui la fonction de CEO, la stabilité des équipes dirigeantes et la qualité de la gouvernance ne sont pas des phénomènes passagers. Elles redéfinissent en profondeur les conditions d'exercice du leadership.</p>
+            
+            <p>C'est pour accompagner cette transition que nous avons créé les Dossiers Stratégiques Alides. Leur ambition n'est pas d'ajouter un commentaire de plus au flux de l'actualité, mais d'offrir aux conseils d'administration, aux fondateurs, aux Family Offices et aux dirigeants un espace de réflexion structuré, exigeant, débarrassé du bruit ambiant. Un espace où l'analyse précède l'opinion, où la profondeur prime sur la vitesse.</p>
+            
+            <p>Les sujets que nous abordons — succession, relation CEO-Board, gouvernance, vulnérabilité du leadership, continuité stratégique — ne peuvent être traités qu'avec rigueur et lucidité. Ils engagent l'avenir des organisations, mais aussi la responsabilité de celles et ceux qui les dirigent.</p>
+            
+            <p>Ces dossiers sont notre contribution à cet effort collectif : éclairer, apporter de la méthode, et parfois nommer ce qui demeure implicite. Nous espérons qu'ils nourriront vos réflexions autant qu'ils nourrissent les nôtres.</p>
+        </div>
+        <div class="edito-signature">
+            <p class="edito-author">Mehdi El Idrissi</p>
+            <p class="edito-role">Managing Director, Alides</p>
+        </div>
+    </div>
+</section>
+
+<!-- DERNIER DOSSIER -->
+<section class="latest">
+    <div class="latest-inner">
+        <div class="latest-header">
+            <p class="latest-label">Dernier dossier</p>
+            <p class="latest-quarter">Q4 2025</p>
+            <h2 class="latest-title">Leadership sous tension</h2>
+            <p class="latest-subtitle">Crise des CEO, succession et gouvernance — ce que les Boards doivent comprendre</p>
+            <a href="dossier-q4-2025.html" class="latest-cta">Lire le dossier</a>
+        </div>
+        
+        <ul class="latest-articles">
+            <li class="latest-article">
+                <p class="latest-article-number">Article 01</p>
+                <h3 class="latest-article-title">La crise silencieuse des CEO</h3>
+                <p class="latest-article-excerpt">Turnover record, mandats raccourcis, burnout invisible : anatomie d'une transformation profonde du leadership exécutif.</p>
+            </li>
+            <li class="latest-article">
+                <p class="latest-article-number">Article 02</p>
+                <h3 class="latest-article-title">Assurer demain</h3>
+                <p class="latest-article-excerpt">L'art difficile du succession planning : pourquoi les Boards doivent transformer un événement ponctuel en discipline permanente.</p>
+            </li>
+            <li class="latest-article">
+                <p class="latest-article-number">Article 03</p>
+                <h3 class="latest-article-title">Le leadership vulnérable</h3>
+                <p class="latest-article-excerpt">Ce que les conseils d'administration doivent désormais accepter pour construire une gouvernance durable.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ARCHIVES -->
+<section class="archives">
+    <div class="archives-inner">
+        <div class="section-header">
+            <p class="section-label">Archives</p>
+            <h2 class="section-title">Dossiers précédents</h2>
+        </div>
+        
+        <div class="dossier-grid">
+            <!-- ÉTÉ 2025 -->
+            <article class="dossier-card">
+                <p class="dossier-quarter">Été 2025</p>
+                <h3 class="dossier-title">L'été, saison des dirigeants lucides</h3>
+                <p class="dossier-desc">Gouvernance, succession, alignement, exécution — cinq leviers critiques pour la rentrée.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">5 articles</span>
+                    <a href="dossier-ete-2025-complet.html" class="dossier-link">Lire</a>
+                </div>
+            </article>
+            
+            <!-- Q3 2025 -->
+            <article class="dossier-card">
+                <p class="dossier-quarter">Q3 2025</p>
+                <h3 class="dossier-title">Gouverner sans illusion</h3>
+                <p class="dossier-desc">Ce que vos comités ne voient pas — piloter dans l'incertitude.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">5 articles</span>
+                    <a href="dossier-q3-2025-complet.html" class="dossier-link">Lire</a>
+                </div>
+            </article>
+            
+            <!-- Q2 2025 -->
+            <article class="dossier-card">
+                <p class="dossier-quarter">Q2 2025</p>
+                <h3 class="dossier-title">Succession : le moment de vérité</h3>
+                <p class="dossier-desc">Quand la transmission du pouvoir révèle la maturité d'une gouvernance.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">5 articles</span>
+                    <a href="dossier-q2-2025-complet.html" class="dossier-link">Lire</a>
+                </div>
+            </article>
+            
+            <!-- Q1 2025 -->
+            <article class="dossier-card">
+                <p class="dossier-quarter">Q1 2025</p>
+                <h3 class="dossier-title">Gouverner dans un monde fragmenté</h3>
+                <p class="dossier-desc">Ce que les PDG et les conseils doivent anticiper en 2025.</p>
+                <div class="dossier-meta">
+                    <span class="dossier-count">4 articles</span>
+                    <a href="dossier-q1-2025-complet.html" class="dossier-link">Lire</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- POURQUOI -->
+<section class="why">
+    <div class="why-inner">
+        <h2 class="why-title">Pourquoi un Knowledge Center ?</h2>
+        
+        <div class="why-content">
+            <div class="why-item">
+                <h3 class="why-item-title">Structurer la pensée</h3>
+                <p class="why-item-text">Créer une collection intellectuelle cohérente sur la gouvernance, le leadership et la succession.</p>
+            </div>
+            
+            <div class="why-item">
+                <h3 class="why-item-title">Outiller les Boards</h3>
+                <p class="why-item-text">Fournir aux conseils d'administration des analyses à forte valeur ajoutée pour éclairer leurs décisions.</p>
+            </div>
+            
+            <div class="why-item">
+                <h3 class="why-item-title">Contribuer au Maroc</h3>
+                <p class="why-item-text">Participer à l'élévation des pratiques de gouvernance au Maroc et en Afrique.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <div class="cta-inner">
+        <p class="cta-text">Ces analyses font écho à vos enjeux ? Échangeons.</p>
+        <a href="https://www.alides.org/contact" class="cta-btn">Nous contacter</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="inner">
+        <span class="footer-logo">Alides</span>
+        <div class="footer-links">
+            <a href="https://www.alides.org">Accueil</a>
+            <a href="https://www.alides.org/executive-search-1">Executive Search</a>
+            <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
+            <a href="https://www.linkedin.com/company/alides-africa" target="_blank">LinkedIn</a>
+        </div>
+        <span class="footer-copy">© 2025 Alides. Tous droits réservés.</span>
+    </div>
+</footer>
+
+</body>
+</html>

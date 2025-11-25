@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gouverner dans un monde fragmenté — Dossier Stratégique Q1 2025 | Alides</title>
+    <meta name="description" content="Dossier stratégique Alides Q1 2025 : ce que les PDG et conseils d'administration doivent anticiper dans un monde géopolitiquement fracturé.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #142036;
+            --color-gold: #C6A157;
+            --color-ivory: #FAFAF8;
+            --color-text: #3A4A5C;
+            --color-text-light: #6B7B8C;
+            --color-border: #E8E6E1;
+            --font-serif: 'EB Garamond', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 6rem;
+            --max-width: 720px;
+            --max-width-wide: 1100px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: var(--font-serif);
+            font-size: 19px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-ivory);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: var(--color-primary);
+            padding: 1rem 2rem;
+        }
+        .header-inner {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0;
+        }
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+        }
+        .header-nav a {
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            transition: color 0.2s ease;
+        }
+        .header-nav a:hover { color: var(--color-gold); }
+
+        .hero {
+            padding: calc(var(--space-xl) + 60px) var(--space-md) var(--space-lg);
+            background: var(--color-primary);
+            color: white;
+            text-align: center;
+        }
+        .hero-back {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            color: var(--color-gold);
+            text-decoration: none;
+            letter-spacing: 0;
+            margin-bottom: var(--space-md);
+            transition: opacity 0.2s ease;
+        }
+        .hero-back:hover { opacity: 0.8; }
+        .hero-label {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: var(--space-xs);
+        }
+        .hero-quarter {
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: var(--space-sm);
+        }
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: var(--space-sm);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.7);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-md);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .intro-epigraph {
+            font-style: italic;
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: var(--space-lg);
+            padding: var(--space-md) 0;
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .intro-text {
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+        .intro-text p { margin-bottom: 1.5rem; }
+        .intro-text p:last-child { margin-bottom: 0; }
+
+        .toc {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-md);
+        }
+        .toc-title {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+            margin-bottom: var(--space-md);
+        }
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            background: var(--color-border);
+        }
+        .toc-item {
+            display: grid;
+            grid-template-columns: 3rem 1fr auto;
+            gap: var(--space-md);
+            align-items: center;
+            padding: var(--space-md);
+            background: white;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .toc-item:hover { background: var(--color-ivory); }
+        .toc-item:hover .toc-link { color: var(--color-gold); }
+        .toc-number {
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            color: var(--color-gold);
+            font-weight: 500;
+        }
+        .toc-content h3 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
+        }
+        .toc-content p {
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+            line-height: 1.5;
+        }
+        .toc-link {
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            color: var(--color-text-light);
+            transition: color 0.2s ease;
+        }
+
+        .articles { border-top: 1px solid var(--color-border); }
+        .article {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-md);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .article-header { margin-bottom: var(--space-lg); }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+        .article-number {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: var(--color-gold);
+            background: rgba(198, 161, 87, 0.1);
+            padding: 0.3rem 0.6rem;
+            border-radius: 2px;
+            letter-spacing: 0;
+        }
+        .article-dossier {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            color: var(--color-text-light);
+            letter-spacing: 0;
+        }
+        .article h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.6rem, 4vw, 2rem);
+            font-weight: 400;
+            color: var(--color-primary);
+            line-height: 1.3;
+            margin-bottom: var(--space-sm);
+        }
+        .article-subtitle {
+            font-family: var(--font-serif);
+            font-style: italic;
+            color: var(--color-text-light);
+        }
+        .article-content h3 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-top: var(--space-lg);
+            margin-bottom: var(--space-sm);
+        }
+        .article-content h4 {
+            font-size: 1.4rem;
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--color-primary);
+            letter-spacing: 0.02em;
+            margin-top: var(--space-md);
+            margin-bottom: var(--space-sm);
+        }
+        .article-content p { margin-bottom: 1.5rem; }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li { margin-bottom: 0.75rem; }
+        .article-content li:last-child { margin-bottom: 0; }
+
+        .pull-quote {
+            margin: var(--space-lg) 0;
+            padding: var(--space-md) 0;
+            padding-left: var(--space-md);
+            border-left: 3px solid var(--color-gold);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--color-primary);
+            line-height: 1.6;
+        }
+        .key-point {
+            background: rgba(198, 161, 87, 0.08);
+            padding: var(--space-md);
+            margin: var(--space-md) 0;
+            border-radius: 4px;
+        }
+        .key-point p {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+        .article-conclusion {
+            margin-top: var(--space-lg);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-border);
+        }
+        .article-conclusion p {
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        .numbered-list {
+            counter-reset: item;
+            list-style: none;
+            padding: 0;
+        }
+        .numbered-list > li {
+            counter-increment: item;
+            margin-bottom: var(--space-md);
+            padding-left: 2.5rem;
+            position: relative;
+        }
+        .numbered-list > li::before {
+            content: counter(item);
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--color-gold);
+            background: rgba(198, 161, 87, 0.1);
+            width: 1.8rem;
+            height: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .article-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--space-lg);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-border);
+        }
+        .article-nav a {
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .article-nav a:hover { color: var(--color-gold); }
+        .article-nav-prev::before { content: "← "; }
+        .article-nav-next::after { content: " →"; }
+
+        .practices-box { margin: var(--space-md) 0; }
+        .practice-bad, .practice-good {
+            padding: var(--space-md);
+            margin-bottom: var(--space-sm);
+        }
+        .practice-bad {
+            background: rgba(180, 60, 60, 0.05);
+            border-left: 3px solid #B43C3C;
+        }
+        .practice-good {
+            background: rgba(60, 140, 80, 0.05);
+            border-left: 3px solid #3C8C50;
+        }
+        .practice-bad h5, .practice-good h5 {
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0;
+            margin-bottom: var(--space-xs);
+        }
+        .practice-bad h5 { color: #B43C3C; }
+        .practice-good h5 { color: #3C8C50; }
+        .practice-bad ul, .practice-good ul { margin: 0; padding-left: 1.2rem; }
+        .practice-bad li, .practice-good li { margin-bottom: 0.5rem; font-size: 0.95rem; }
+
+        .other-dossiers {
+            background: white;
+            padding: var(--space-xl) var(--space-md);
+        }
+        .other-dossiers-inner {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+            margin-bottom: var(--space-md);
+        }
+        .dossiers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+        }
+        .dossier-card {
+            padding: var(--space-md);
+            border: 1px solid var(--color-border);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        .dossier-card:hover { border-color: var(--color-gold); }
+        .dossier-card-quarter {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            color: var(--color-gold);
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-xs);
+        }
+        .dossier-card h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: var(--space-xs);
+        }
+        .dossier-card p {
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            color: var(--color-text-light);
+        }
+
+        .cta {
+            background: var(--color-primary);
+            padding: var(--space-xl) var(--space-md);
+            text-align: center;
+        }
+        .cta-inner {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .cta h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: white;
+            margin-bottom: var(--space-md);
+        }
+        .cta-btn {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--color-gold);
+            text-decoration: none;
+            padding: 0.9rem 2rem;
+            border: 1px solid var(--color-gold);
+            letter-spacing: 0;
+            transition: all 0.2s ease;
+        }
+        .cta-btn:hover {
+            background: var(--color-gold);
+            color: var(--color-primary);
+        }
+
+        .footer {
+            background: var(--color-primary);
+            padding: var(--space-md) var(--space-md);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer-inner {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-links {
+            display: flex;
+            gap: var(--space-md);
+        }
+        .footer-links a {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .footer-links a:hover { color: var(--color-gold); }
+        .footer-copy {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.4);
+        }
+
+        /* ==================== RESPONSIVE MOBILE ==================== */
+        
+        @media (max-width: 768px) {
+            :root {
+                --space-md: 1.5rem;
+                --space-lg: 2.5rem;
+                --space-xl: 3.5rem;
+            }
+            
+            body {
+                font-size: 17px;
+            }
+            
+            .header {
+                padding: 0.8rem 1rem;
+            }
+            
+            .header-nav { 
+                display: none; 
+            }
+            
+            .hero {
+                padding: calc(var(--space-lg) + 50px) 1.25rem var(--space-md);
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+                line-height: 1.25;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .hero-back {
+                font-size: 0.7rem;
+                margin-bottom: 1rem;
+            }
+            
+            .intro {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .intro-epigraph {
+                font-size: 1rem;
+                padding: 1rem 0;
+            }
+            
+            .intro-text {
+                font-size: 1rem;
+            }
+            
+            .toc {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .toc-item { 
+                grid-template-columns: 2.5rem 1fr;
+                padding: 1rem;
+                gap: 1rem;
+            }
+            
+            .toc-link { 
+                display: none; 
+            }
+            
+            .toc-content h3 {
+                font-size: 1rem;
+            }
+            
+            .toc-content p {
+                font-size: 0.75rem;
+            }
+            
+            .article {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .article h2 {
+                font-size: 1.5rem;
+                line-height: 1.3;
+            }
+            
+            .article-content h3 {
+                font-size: 1.15rem;
+                margin-top: var(--space-md);
+            }
+            
+            .article-content h4 {
+                font-size: 0.8rem;
+            }
+            
+            .article-content p,
+            .article-content li {
+                font-size: 1rem;
+            }
+            
+            .pull-quote {
+                font-size: 1rem;
+                padding-left: 1rem;
+                margin: var(--space-md) 0;
+            }
+            
+            .key-point {
+                padding: 1rem;
+            }
+            
+            .key-point p {
+                font-size: 0.95rem;
+            }
+            
+            .numbered-list > li {
+                padding-left: 2rem;
+            }
+            
+            .numbered-list > li::before {
+                width: 1.5rem;
+                height: 1.5rem;
+                font-size: 0.7rem;
+            }
+            
+            .article-nav { 
+                flex-direction: column; 
+                gap: var(--space-sm);
+                text-align: center;
+            }
+            
+            .practices-box {
+                margin: 1rem 0;
+            }
+            
+            .practice-bad, .practice-good {
+                padding: 1rem;
+            }
+            
+            .other-dossiers {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .dossiers-grid { 
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .dossier-card {
+                padding: 1rem;
+            }
+            
+            .dossier-card h3 {
+                font-size: 1rem;
+            }
+            
+            .cta {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .cta h2 {
+                font-size: 1.2rem;
+            }
+            
+            .cta-btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.75rem;
+            }
+            
+            .footer {
+                padding: 1.5rem 1.25rem;
+            }
+            
+            .footer-inner { 
+                flex-direction: column; 
+                gap: 1rem; 
+                text-align: center; 
+            }
+            
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+            
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .article h2 {
+                font-size: 1.3rem;
+            }
+            
+            .toc-item {
+                grid-template-columns: 2rem 1fr;
+            }
+            
+            .toc-number {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <a href="https://www.alides.org" class="logo">Alides</a>
+            <nav class="header-nav">
+                <a href="#">Executive Search</a>
+                <a href="#">Gouvernance</a>
+                <a href="#">Dossiers Stratégiques</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <a href="index.html" class="hero-back">← Tous les dossiers</a>
+        <div class="hero-label">Dossier Stratégique</div>
+        <div class="hero-quarter">Q1 2025</div>
+        <h1>Gouverner dans un monde fragmenté</h1>
+        <p class="hero-subtitle">Ce que les PDG et les conseils doivent anticiper</p>
+    </section>
+
+    <section class="intro">
+        <p class="intro-epigraph">
+            « Dans un monde fragmenté, le capitalisme stratégique sera celui des mieux alignés : avec leur environnement, leurs partenaires, leurs territoires, leurs valeurs. »
+        </p>
+        <div class="intro-text">
+            <p>2025 marque une reconfiguration brutale de l'ordre économique mondial. Économie de blocs instable, logiques de puissance, souveraineté industrielle : les conseils d'administration deviennent des organes de stratégie globale.</p>
+            <p>Ce dossier explore les implications concrètes de ce basculement systémique pour les dirigeants : exposition géographique, cybersécurité, gouvernance financière, talent management, et le rôle stratégique de la diaspora marocaine.</p>
+            <p>Car au-delà des turbulences, une exigence traverse tous ces enjeux : la clarté. Clarté des objectifs, clarté des priorités, clarté des arbitrages. Sans elle, l'action se disperse et la gouvernance s'épuise.</p>
+        </div>
+    </section>
+
+    <section class="toc">
+        <h2 class="toc-title">Dans ce dossier</h2>
+        <div class="toc-list">
+            <a href="#article-1" class="toc-item">
+                <span class="toc-number">01</span>
+                <div class="toc-content">
+                    <h3>Gouverner dans un monde fragmenté</h3>
+                    <p>Ce que les PDG et les conseils doivent anticiper en 2025</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+            <a href="#article-2" class="toc-item">
+                <span class="toc-number">02</span>
+                <div class="toc-content">
+                    <h3>La diaspora marocaine : un levier stratégique</h3>
+                    <p>Renforcer la gouvernance des entreprises par les talents du monde</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+            <a href="#article-3" class="toc-item">
+                <span class="toc-number">03</span>
+                <div class="toc-content">
+                    <h3>Dirigeants : clarifiez vos objectifs</h3>
+                    <p>Ou préparez-vous à l'inefficacité</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+            <a href="#article-4" class="toc-item">
+                <span class="toc-number">04</span>
+                <div class="toc-content">
+                    <h3>Optimiser la politique de rémunération des dirigeants</h3>
+                    <p>La vision d'Alides pour une gouvernance performante</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="articles">
+
+        <!-- Article 1 -->
+        <article class="article" id="article-1">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 01</span>
+                    <span class="article-dossier">Dossier Q1 2025 — Gouverner dans un monde fragmenté</span>
+                </div>
+                <h2>Gouverner dans un monde fragmenté : ce que les PDG et les conseils doivent anticiper en 2025</h2>
+            </div>
+
+            <div class="article-content">
+                <p>2025 s'ouvre sur une reconfiguration brutale de l'ordre économique mondial. Non pas une crise temporaire, mais un basculement systémique. L'économie de blocs, longtemps théorique, devient tangible, instable, stratégique. Les entreprises évoluent désormais dans un capitalisme fractal, où chaque décision opérationnelle s'inscrit dans des logiques de puissance.</p>
+
+                <p>Les conseils d'administration ne peuvent plus se contenter d'un rôle de supervision financière ou de conformité. Ils deviennent des organes de stratégie globale : souveraineté industrielle, sécurité numérique, exposition monétaire, compétitivité réglementaire. Un nouvel agenda s'impose.</p>
+
+                <h3>Un capitalisme fractal sous tension géopolitique</h3>
+                
+                <p>Le premier trimestre 2025 illustre cette nouvelle donne :</p>
+                
+                <ul>
+                    <li><strong>Trump 2.0</strong> : droits de douane à 145 % sur les produits chinois, licences export imposées même aux alliés</li>
+                    <li><strong>Pékin</strong> : restriction des exports de métaux critiques (gallium, germanium)</li>
+                    <li><strong>Cyberattaques</strong> sur les infrastructures civiles européennes</li>
+                    <li><strong>Marchés</strong> : or à 3150 $/once, bourses à -3 à -5 %, dollar en perte d'attractivité</li>
+                    <li><strong>Europe divisée</strong> : posture allemande vs appel français à la réciprocité</li>
+                </ul>
+
+                <p>Les chaînes de valeur mondiales sont désormais soumises à des zones de concentration industrielle stratégique : semi-conducteurs (Taïwan, Corée), terres rares (Chine), cobalt (RDC), lithium (Amérique latine), batteries (Chine, Europe).</p>
+
+                <h3>Six conséquences stratégiques pour les conseils et PDG</h3>
+
+                <ol class="numbered-list">
+                    <li><strong>Repenser l'exposition géographique des actifs</strong><br>Cartographier les actifs selon le risque politique, la souveraineté réglementaire, la stabilité juridique. Construire une matrice rentabilité / stabilité géopolitique.</li>
+                    <li><strong>Cybersécurité = actif stratégique</strong><br>Le budget cyber n'est plus une charge mais une assurance opérationnelle, un levier de valorisation, un argument face aux assureurs et investisseurs.</li>
+                    <li><strong>Intégrer les fluctuations monétaires dans la gouvernance financière</strong><br>Diversifier les devises de référence, les lieux de financement, les sièges fiscaux.</li>
+                    <li><strong>Identifier les futurs standards industriels "OTAN-compatibles"</strong><br>Un OTAN industriel informel se dessine. Les conformités accrues en cyber, traçabilité et compliance deviennent des prérequis.</li>
+                    <li><strong>Anticiper les recompositions actionnariales</strong><br>Surveiller les fonds activistes, préparer des "narratifs de résilience" face aux pressions externes.</li>
+                    <li><strong>Adapter la stratégie RH à la carte du talent mondial</strong><br>Restriction des flux d'étudiants chinois aux USA, tensions sur les visas tech : identifier les nouveaux hubs de formation et de recrutement.</li>
+                </ol>
+
+                <div class="article-conclusion">
+                    <p>Dans un monde fragmenté, le capitalisme stratégique sera celui des mieux alignés : avec leur environnement, leurs partenaires, leurs territoires, leurs valeurs. Les conseils d'administration doivent devenir les architectes de cette cohérence.</p>
+                </div>
+            </div>
+
+            <nav class="article-nav">
+                <span></span>
+                <a href="#article-2" class="article-nav-next">Article suivant</a>
+            </nav>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article" id="article-2">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 02</span>
+                    <span class="article-dossier">Dossier Q1 2025 — Gouverner dans un monde fragmenté</span>
+                </div>
+                <h2>La diaspora marocaine : un levier stratégique pour renforcer la gouvernance des entreprises</h2>
+            </div>
+
+            <div class="article-content">
+                <p>Le Maroc possède une ressource unique que peu de nations peuvent revendiquer : une diaspora qualifiée, influente et profondément attachée à son pays d'origine. Présente aux quatre coins du monde, cette élite marocaine, forte de son expérience internationale et de son réseau, représente un levier puissant pour accélérer le développement économique et renforcer la gouvernance des entreprises et institutions marocaines.</p>
+
+                <p>Si les transferts de fonds dépassent les 100 milliards de dirhams par an, la véritable valeur de cette diaspora réside ailleurs. Son savoir-faire, son capital relationnel et son indépendance stratégique en font un actif sous-exploité qui pourrait jouer un rôle déterminant dans la transformation du pays.</p>
+
+                <h3>Une diaspora à haut potentiel</h3>
+                
+                <p>Les Marocains résidant à l'étranger occupent aujourd'hui des postes clés dans la finance, l'industrie, la technologie et la gouvernance d'entreprise. Présents dans les grandes places économiques mondiales — New York, Londres, Paris, Dubaï — ils participent activement aux dynamiques stratégiques de demain.</p>
+                
+                <p>Trois éléments font de cette diaspora un levier unique :</p>
+                <ul>
+                    <li>Une <strong>expertise internationale</strong> acquise au sein d'institutions et d'entreprises de premier plan</li>
+                    <li>Un <strong>réseau et une influence globale</strong> permettant d'ouvrir des opportunités de partenariats et d'investissement</li>
+                    <li>Une <strong>approche stratégique et indépendante</strong> de la gouvernance alignée avec les standards internationaux</li>
+                </ul>
+
+                <h3>Une contribution essentielle à la gouvernance des entreprises</h3>
+                
+                <p>L'amélioration de la gouvernance des entreprises marocaines est une nécessité pour assurer leur compétitivité et leur résilience. La diaspora marocaine peut jouer un rôle clé dans cette transformation en intégrant davantage les conseils d'administration et les instances stratégiques.</p>
+                
+                <p>Quatre axes sont à considérer :</p>
+                <ul>
+                    <li>Apporter une <strong>vision internationale</strong> aux conseils d'administration et aux comités stratégiques</li>
+                    <li>Renforcer la <strong>culture de la performance et de l'innovation</strong> au sein des entreprises marocaines</li>
+                    <li>Faciliter l'<strong>attraction d'investissements étrangers</strong> grâce à un réseau international et une crédibilité accrue</li>
+                    <li>Renforcer la <strong>transparence et la confiance</strong> dans la gouvernance des entreprises familiales et des groupes nationaux</li>
+                </ul>
+
+                <div class="pull-quote">
+                    D'autres nations, comme l'Inde, la Chine ou Israël, ont su mobiliser efficacement leur diaspora en lui confiant des responsabilités clés dans la transformation économique du pays. Le Maroc doit s'inspirer de ces modèles.
+                </div>
+
+                <h3>Un cadre à structurer pour maximiser l'impact</h3>
+                
+                <p>Dans son discours du 6 novembre 2024, Sa Majesté le Roi Mohammed VI a souligné la nécessité d'organiser et de structurer la contribution des Marocains du monde. Trois actions concrètes peuvent être mises en place :</p>
+                
+                <ol>
+                    <li><strong>Faciliter l'accès aux instances de gouvernance</strong> en créant un cadre institutionnel permettant aux talents marocains à l'international d'intégrer les conseils d'administration et les instances stratégiques du pays</li>
+                    <li><strong>Valoriser et connecter les compétences</strong> marocaines du monde via des plateformes dédiées à la mise en relation avec les entreprises et institutions marocaines</li>
+                    <li><strong>Intégrer activement la diaspora</strong> dans l'écosystème d'innovation et d'investissement en encourageant les Marocains du monde à investir et à s'engager dans des projets structurants</li>
+                </ol>
+
+                <h3>Manbit Al Aḥrar : une initiative dans la continuité de notre engagement</h3>
+                
+                <p>Dans cette dynamique, nous avons lancé <strong>Manbit Al Aḥrār</strong>, un réseau dédié aux dirigeants marocains de la diaspora souhaitant jouer un rôle actif dans la transformation économique et institutionnelle du pays.</p>
+                
+                <p>Cette initiative s'inscrit dans la continuité de notre travail chez Alides, où nous avons depuis des années constitué un vivier des nombreux talents marocains du monde alimentant les entreprises et institutions du pays. Notre objectif est d'accélérer cette dynamique en structurant un espace de connexion, d'échange et d'opportunités.</p>
+
+                <div class="article-conclusion">
+                    <p>Le Maroc dispose déjà des talents et des compétences nécessaires pour accélérer sa transformation. L'enjeu n'est pas de chercher ces ressources ailleurs, mais de mieux les intégrer à son propre écosystème.</p>
+                    <p>Les dirigeants marocains à l'international sont prêts à s'engager, à condition qu'un cadre structuré leur permette d'avoir un impact réel.</p>
+                </div>
+            </div>
+
+            <nav class="article-nav">
+                <a href="#article-1" class="article-nav-prev">Article précédent</a>
+                <a href="#article-3" class="article-nav-next">Article suivant</a>
+            </nav>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article" id="article-3">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 03</span>
+                    <span class="article-dossier">Dossier Q1 2025 — Gouverner dans un monde fragmenté</span>
+                </div>
+                <h2>Dirigeants : clarifiez vos objectifs ou préparez-vous à l'inefficacité</h2>
+            </div>
+
+            <div class="article-content">
+                <p>Dans un monde de plus en plus volatile, où les dirigeants jonglent entre transformations numériques, tensions RH, injonctions à la performance et attentes sociétales, une compétence paraît désuète mais reste pourtant décisive : savoir formuler et hiérarchiser ses objectifs.</p>
+
+                <div class="pull-quote">
+                    La "gestion du temps" est souvent invoquée comme un enjeu majeur. Mais la vraie question n'est pas le temps. Elle est la clarté.
+                </div>
+                
+                <p>À quoi consacre-t-on ses journées ? Qu'est-ce qui relève de l'urgent mais anecdotique — et qu'est-ce qui relève du fondamental, du structurant, du stratégique ? Trop souvent, les dirigeants confondent activité et impact, remplissent leurs agendas de réunions ou de dossiers sans lien clair avec les objectifs les plus décisifs de leur mission.</p>
+                
+                <p><em>La Bible du Manager</em> de Harvard Business Review propose une grille simple mais puissante : distinguer trois niveaux d'objectifs — essentiels, d'appui, d'agrément — et organiser son action en conséquence.</p>
+
+                <h3>Décryptage : l'art de hiérarchiser pour décider</h3>
+                
+                <h4>Objectifs "essentiels" : le cœur stratégique</h4>
+                <p>Ce sont les objectifs qui, s'ils ne sont pas atteints, remettent en cause la viabilité ou la compétitivité d'une organisation. Pour un CEO, cela peut être : rétablir la rentabilité sous 12 mois, réussir une fusion sans perdre les talents clés, sécuriser un financement vital, maintenir une position de leader sur un marché prioritaire.</p>
+                <p>Ils sont peu nombreux, mais doivent structurer l'agenda du dirigeant, sa disponibilité mentale, ses arbitrages.</p>
+                
+                <h4>Objectifs "d'appui" : la capacité à réussir demain</h4>
+                <p>Ces objectifs n'ont pas d'impact immédiat, mais préparent les conditions de l'exécution stratégique. Former ses équipes, renforcer l'engagement managérial, faire évoluer les outils, structurer une filière de succession : autant de leviers souvent négligés mais déterminants dans la durée.</p>
+                <p>Les leaders qui réussissent savent investir du temps dans ces chantiers "non urgents mais importants" — là où, justement, se joue la capacité à croître sans s'épuiser.</p>
+                
+                <h4>Objectifs "d'agrément" : attention à l'illusion du confort</h4>
+                <p>Ce sont les "nice to have". Améliorer l'ergonomie d'un outil interne, organiser un séminaire plus convivial, revoir le design du rapport annuel. Ces objectifs peuvent améliorer le quotidien, mais n'ont pas d'effet direct sur les résultats ni sur la transformation.</p>
+                <p>Le danger n'est pas tant de les ignorer que d'en faire une priorité, au détriment du reste.</p>
+
+                <h3>Implications pour les dirigeants : réapprendre à dire non</h3>
+                
+                <div class="key-point">
+                    <p>Cette grille d'analyse révèle une vérité peu confortable : ce qui accapare votre temps n'est pas toujours ce qui fait votre valeur.</p>
+                </div>
+                
+                <p>Dans un monde saturé d'interruptions et d'injonctions, le risque est grand de consacrer ses journées à ce qui est "urgent pour les autres" — et de négliger l'essentiel pour l'organisation.</p>
+                
+                <p>Voici quelques leviers d'action concrets :</p>
+                
+                <h4>Faire le tri</h4>
+                <p>Prenez une semaine de votre agenda et relisez-la à l'aune des trois niveaux d'objectifs. Quelle proportion de vos actions sert l'essentiel ? L'appui ? L'agrément ? La lucidité commence par ce diagnostic simple.</p>
+                
+                <h4>Redonner du sens aux entretiens d'objectifs</h4>
+                <p>Que ce soit avec vos N-1 ou votre board, sortez des logiques administratives. Utilisez cette grille pour poser des questions puissantes : "Quels sont, dans tes missions, les objectifs sans lesquels l'organisation échouerait ?" "Qu'est-ce qui est important mais pourrait être remis à plus tard ?"</p>
+                
+                <h4>Organiser son agenda autour de l'essentiel</h4>
+                <p>Ce que vous jugez prioritaire doit apparaître… dans votre emploi du temps. Si l'un de vos objectifs essentiels est de renforcer votre équipe de direction, combien d'heures y consacrez-vous chaque semaine ? Trop souvent, les priorités affichées ne trouvent aucun écho dans la réalité de l'agenda.</p>
+                
+                <h4>Apprendre à dire non — y compris au PDG</h4>
+                <p>Savoir dire "non" à un projet flatteur, mais qui ne sert aucun objectif essentiel, est une compétence politique rare. Elle distingue les exécutants loyaux des dirigeants responsables.</p>
+
+                <div class="article-conclusion">
+                    <h4>Redonner sa noblesse à la clarté</h4>
+                    <p>Le tri stratégique des objectifs n'est pas un exercice bureaucratique. C'est un acte de lucidité managériale et de responsabilité collective. Il impose de la rigueur, parfois du courage, mais il libère un bien précieux : la capacité d'agir là où l'on a le plus d'impact.</p>
+                    <p>Les dirigeants les plus remarquables ne sont pas les plus occupés, mais les plus alignés. Et si, au lieu de courir après le temps, vous commenciez par redessiner votre boussole ?</p>
+                </div>
+            </div>
+
+            <nav class="article-nav">
+                <a href="#article-2" class="article-nav-prev">Article précédent</a>
+                <a href="#article-4" class="article-nav-next">Article suivant</a>
+            </nav>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article" id="article-4">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 04</span>
+                    <span class="article-dossier">Dossier Q1 2025 — Gouverner dans un monde fragmenté</span>
+                </div>
+                <h2>Optimiser la politique de rémunération des dirigeants : la vision d'Alides pour une gouvernance performante</h2>
+            </div>
+
+            <div class="article-content">
+                <p>La rémunération des dirigeants exécutifs est un sujet central dans la gouvernance d'entreprise. Elle ne se limite pas à une simple rétribution, mais constitue un levier de motivation, d'alignement des intérêts entre actionnaires et management, et de performance globale. Une rémunération bien conçue renforce l'engagement du dirigeant, favorise une gestion équilibrée et contribue à la stabilité et la croissance de l'entreprise.</p>
+
+                <p>Contrairement à la culture anglo-saxonne, où la transparence sur la rémunération des dirigeants est largement acceptée, en France et dans de nombreux autres pays, la question est souvent sensible. Les différentes parties prenantes, notamment les actionnaires, doivent s'assurer que la rémunération est alignée sur les objectifs stratégiques et la création de valeur.</p>
+
+                <h3>Les trois composantes principales de la rémunération des dirigeants</h3>
+                
+                <h4>1. La rémunération fixe</h4>
+                <p>La part fixe de la rémunération reflète les compétences, l'expérience, la responsabilité et les risques assumés par le dirigeant. Elle est souvent accompagnée d'avantages en nature tels que : véhicule de fonction, logement de fonction, assurance prévoyance et retraite complémentaire, couverture en responsabilité civile professionnelle.</p>
+                <p>Il est recommandé de réaliser une évaluation régulière de cette rémunération fixe afin de s'assurer qu'elle reste cohérente avec les pratiques du marché et l'évolution de l'entreprise.</p>
+                
+                <h4>2. La part variable</h4>
+                <p>Le salaire variable est conçu pour récompenser la performance et aligner les intérêts du dirigeant sur ceux de l'entreprise. Il repose sur des objectifs précis et mesurables, définis par l'organe de gouvernance. Ces objectifs peuvent inclure :</p>
+                <ul>
+                    <li><strong>Critères quantitatifs</strong> : chiffre d'affaires, EBITDA, marges, croissance des revenus</li>
+                    <li><strong>Critères qualitatifs</strong> : satisfaction client, leadership, innovation, responsabilité sociétale</li>
+                </ul>
+                <p>Une répartition courante entre fixe et variable est de 70 % fixe et 30 % variable, garantissant à la fois stabilité et motivation.</p>
+                
+                <h4>3. Les mécanismes d'intéressement et d'actionnariat</h4>
+                <p>Les dispositifs d'intéressement à long terme visent à récompenser la création de valeur durable et à renforcer l'engagement du dirigeant. Parmi les outils utilisés :</p>
+                <ul>
+                    <li><strong>Actions gratuites ou actions de performance</strong> : le dirigeant devient actionnaire sous certaines conditions</li>
+                    <li><strong>Actions de préférence</strong> : droits spécifiques sur dividendes ou votes</li>
+                    <li><strong>Bons de souscription d'actions (BSA)</strong> : incitation à long terme basée sur la croissance de la valeur de l'entreprise</li>
+                </ul>
+                <p>Un bon équilibre entre ces différents éléments permet de créer un système incitatif qui attire et retient les meilleurs talents.</p>
+
+                <h3>Pourquoi une approche structurée est essentielle ?</h3>
+                
+                <p>Une politique de rémunération mal conçue peut entraîner des problèmes de motivation, de gouvernance et de perception au sein de l'entreprise. Il est donc crucial de respecter plusieurs principes fondamentaux :</p>
+                <ul>
+                    <li><strong>Cohérence</strong> : la rémunération doit être alignée avec les objectifs stratégiques et les attentes des actionnaires</li>
+                    <li><strong>Équité</strong> : la rémunération doit être perçue comme juste, avec une baisse possible en cas de contre-performance</li>
+                    <li><strong>Transparence</strong> : les montants et critères doivent être communiqués au Conseil d'administration</li>
+                    <li><strong>Alignement des intérêts</strong> : la rémunération doit encourager une création de valeur à long terme</li>
+                </ul>
+
+                <h3>Erreurs courantes et bonnes pratiques</h3>
+                
+                <div class="practices-box">
+                    <div class="practice-bad">
+                        <h5>❌ Erreurs courantes</h5>
+                        <ul>
+                            <li>Rémunération fixe trop élevée, déconnectée des résultats de l'entreprise</li>
+                            <li>Absence d'indicateurs clairs pour la part variable</li>
+                            <li>Absence d'alignement entre les intérêts du dirigeant et ceux des actionnaires</li>
+                            <li>Manque de transparence dans les processus de décision</li>
+                        </ul>
+                    </div>
+                    <div class="practice-good">
+                        <h5>✓ Bonnes pratiques</h5>
+                        <ul>
+                            <li>Définir des critères de performance mesurables et réalistes</li>
+                            <li>Mettre en place un comité de rémunération pour assurer l'objectivité</li>
+                            <li>Favoriser les mécanismes d'intéressement à long terme</li>
+                            <li>Assurer une évaluation régulière du système de rémunération</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="article-conclusion">
+                    <p>Une rémunération bien structurée est un outil puissant pour attirer, motiver et retenir des dirigeants performants. En respectant les principes de transparence, d'équité et d'alignement avec les objectifs stratégiques de l'entreprise, elle devient un levier de gouvernance efficace.</p>
+                    <p>« Une politique de rémunération bien pensée n'est pas une charge, mais un levier stratégique pour attirer, motiver et aligner les dirigeants avec les objectifs de l'entreprise. »</p>
+                </div>
+            </div>
+
+            <nav class="article-nav">
+                <a href="#article-3" class="article-nav-prev">Article précédent</a>
+                <span></span>
+            </nav>
+        </article>
+
+    </section>
+
+    <section class="other-dossiers">
+        <div class="other-dossiers-inner">
+            <h2 class="section-title">Autres dossiers stratégiques</h2>
+            <div class="dossiers-grid">
+                <a href="dossier-q4-2025.html" class="dossier-card">
+                    <div class="dossier-card-quarter">Q4 2025</div>
+                    <h3>Leadership sous tension</h3>
+                    <p>3 articles · Le dirigeant face à l'épuisement et la solitude du pouvoir</p>
+                </a>
+                <a href="dossier-q3-2025-complet.html" class="dossier-card">
+                    <div class="dossier-card-quarter">Q3 2025</div>
+                    <h3>Gouverner sans illusion</h3>
+                    <p>5 articles · Ce que montre (et cache) votre système de contrôle</p>
+                </a>
+                <a href="dossier-q2-2025-complet.html" class="dossier-card">
+                    <div class="dossier-card-quarter">Q2 2025</div>
+                    <h3>Succession : le moment de vérité</h3>
+                    <p>5 articles · La transmission comme test de souveraineté</p>
+                </a>
+                <a href="dossier-ete-2025-complet.html" class="dossier-card">
+                    <div class="dossier-card-quarter">ÉTÉ 2025</div>
+                    <h3>L'été des dirigeants lucides</h3>
+                    <p>5 articles · Cinq décisions clés avant la rentrée</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-inner">
+            <h2>Votre gouvernance est-elle alignée avec les enjeux de ce nouveau monde ?</h2>
+            <a href="https://www.alides.org/contact" class="cta-btn">Échangeons en toute confidentialité</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="https://www.alides.org">Alides.org</a>
+                <a href="#">Executive Search</a>
+                <a href="#">Gouvernance</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footer-copy">© 2025 Alides · Member of ECI Group</div>
+        </div>
+    </footer>
+
+</body>
+</html>

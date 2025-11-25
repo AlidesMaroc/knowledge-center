@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Succession : le moment de vérité — Dossier Stratégique Q2 2025 | Alides</title>
+    <meta name="description" content="Dossier stratégique Alides Q2 2025 : la succession du dirigeant comme épreuve de vérité institutionnelle. De Rome aux groupes familiaux, le même point de bascule.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #142036;
+            --color-gold: #C6A157;
+            --color-ivory: #FAFAF8;
+            --color-text: #3A4A5C;
+            --color-text-light: #6B7B8C;
+            --color-border: #E8E6E1;
+            --font-serif: 'EB Garamond', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 6rem;
+            --max-width: 720px;
+            --max-width-wide: 1100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-serif);
+            font-size: 19px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-ivory);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: var(--color-primary);
+            padding: 1rem 2rem;
+        }
+
+        .header-inner {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .header-nav a {
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            transition: color 0.2s ease;
+        }
+
+        .header-nav a:hover {
+            color: var(--color-gold);
+        }
+
+        /* Hero */
+        .hero {
+            padding: calc(var(--space-xl) + 60px) var(--space-md) var(--space-lg);
+            background: var(--color-primary);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-back {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            color: var(--color-gold);
+            text-decoration: none;
+            letter-spacing: 0;
+            margin-bottom: var(--space-md);
+            transition: opacity 0.2s ease;
+        }
+
+        .hero-back:hover {
+            opacity: 0.8;
+        }
+
+        .hero-label {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-gold);
+            margin-bottom: var(--space-xs);
+        }
+
+        .hero-quarter {
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: var(--space-sm);
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: var(--space-sm);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.7);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Introduction */
+        .intro {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-md);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .intro-epigraph {
+            font-style: italic;
+            color: var(--color-primary);
+            text-align: center;
+            margin-bottom: var(--space-lg);
+            padding: var(--space-md) 0;
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .intro-epigraph .source {
+            display: block;
+            margin-top: var(--space-xs);
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+
+        .intro-text {
+            line-height: 1.8;
+            color: var(--color-text);
+        }
+
+        .intro-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Table of Contents */
+        .toc {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-md);
+        }
+
+        .toc-title {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+            margin-bottom: var(--space-md);
+        }
+
+        .toc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            background: var(--color-border);
+        }
+
+        .toc-item {
+            display: grid;
+            grid-template-columns: 3rem 1fr auto;
+            gap: var(--space-md);
+            align-items: center;
+            padding: var(--space-md);
+            background: white;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .toc-item:hover {
+            background: var(--color-ivory);
+        }
+
+        .toc-item:hover .toc-link {
+            color: var(--color-gold);
+        }
+
+        .toc-number {
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            color: var(--color-gold);
+            font-weight: 500;
+        }
+
+        .toc-content h3 {
+            font-family: var(--font-serif);
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .toc-content p {
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+            line-height: 1.5;
+        }
+
+        .toc-link {
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            color: var(--color-text-light);
+            transition: color 0.2s ease;
+        }
+
+        /* Articles */
+        .articles {
+            border-top: 1px solid var(--color-border);
+        }
+
+        .article {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: var(--space-xl) var(--space-md);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .article-header {
+            margin-bottom: var(--space-lg);
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+        }
+
+        .article-number {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: var(--color-gold);
+            background: rgba(198, 161, 87, 0.1);
+            padding: 0.3rem 0.6rem;
+            border-radius: 2px;
+            letter-spacing: 0;
+        }
+
+        .article-dossier {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            color: var(--color-text-light);
+            letter-spacing: 0;
+        }
+
+        .article h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.6rem, 4vw, 2rem);
+            font-weight: 400;
+            color: var(--color-primary);
+            line-height: 1.3;
+            margin-bottom: var(--space-sm);
+        }
+
+        .article-subtitle {
+            font-family: var(--font-serif);
+            font-style: italic;
+            color: var(--color-text-light);
+        }
+
+        .article-content h3 {
+            font-family: var(--font-serif);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-top: var(--space-lg);
+            margin-bottom: var(--space-sm);
+        }
+
+        .article-content h4 {
+            font-size: 1.4rem;
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--color-primary);
+            letter-spacing: 0.02em;
+            margin-top: var(--space-md);
+            margin-bottom: var(--space-sm);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.75rem;
+        }
+
+        .article-content li:last-child {
+            margin-bottom: 0;
+        }
+
+        .pull-quote {
+            margin: var(--space-lg) 0;
+            padding: var(--space-md) 0;
+            padding-left: var(--space-md);
+            border-left: 3px solid var(--color-gold);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--color-primary);
+            line-height: 1.6;
+        }
+
+        .key-point {
+            background: rgba(198, 161, 87, 0.08);
+            padding: var(--space-md);
+            margin: var(--space-md) 0;
+            border-radius: 4px;
+        }
+
+        .key-point p {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        .article-conclusion {
+            margin-top: var(--space-lg);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .article-conclusion p {
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        /* Stats box */
+        .stats-box {
+            background: white;
+            border: 1px solid var(--color-border);
+            padding: var(--space-md);
+            margin: var(--space-md) 0;
+        }
+
+        .stats-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .stats-box li {
+            padding: var(--space-xs) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .stats-box li:last-child {
+            border-bottom: none;
+        }
+
+        .stats-box strong {
+            color: var(--color-gold);
+        }
+
+        /* Article Navigation */
+        .article-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--space-lg);
+            padding-top: var(--space-md);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .article-nav a {
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .article-nav a:hover {
+            color: var(--color-gold);
+        }
+
+        .article-nav-prev::before {
+            content: "← ";
+        }
+
+        .article-nav-next::after {
+            content: " →";
+        }
+
+        /* Other Dossiers */
+        .other-dossiers {
+            background: white;
+            padding: var(--space-xl) var(--space-md);
+        }
+
+        .other-dossiers-inner {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+            margin-bottom: var(--space-md);
+        }
+
+        .dossiers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .dossier-card {
+            padding: var(--space-md);
+            border: 1px solid var(--color-border);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .dossier-card:hover {
+            border-color: var(--color-gold);
+        }
+
+        .dossier-card-quarter {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            color: var(--color-gold);
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-xs);
+        }
+
+        .dossier-card h3 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: var(--space-xs);
+        }
+
+        .dossier-card p {
+            font-size: 1.4rem;
+            font-size: 0.75rem;
+            color: var(--color-text-light);
+        }
+
+        /* CTA */
+        .cta {
+            background: var(--color-primary);
+            padding: var(--space-xl) var(--space-md);
+            text-align: center;
+        }
+
+        .cta-inner {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: white;
+            margin-bottom: var(--space-md);
+        }
+
+        .cta-btn {
+            display: inline-block;
+            font-size: 1.4rem;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--color-gold);
+            text-decoration: none;
+            padding: 0.9rem 2rem;
+            border: 1px solid var(--color-gold);
+            letter-spacing: 0;
+            transition: all 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            background: var(--color-gold);
+            color: var(--color-primary);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-primary);
+            padding: var(--space-md) var(--space-md);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-inner {
+            max-width: var(--max-width-wide);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .footer-links a {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.5);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-gold);
+        }
+
+        .footer-copy {
+            font-size: 1.4rem;
+            font-size: 0.7rem;
+            color: rgba(255,255,255,0.4);
+        }
+
+        /* ==================== RESPONSIVE MOBILE ==================== */
+        
+        @media (max-width: 768px) {
+            :root {
+                --space-md: 1.5rem;
+                --space-lg: 2.5rem;
+                --space-xl: 3.5rem;
+            }
+            
+            body {
+                font-size: 17px;
+            }
+            
+            .header {
+                padding: 0.8rem 1rem;
+            }
+            
+            .header-nav {
+                display: none;
+            }
+            
+            .hero {
+                padding: calc(var(--space-lg) + 50px) 1.25rem var(--space-md);
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+                line-height: 1.25;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .intro {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .intro-epigraph {
+                font-size: 1rem;
+            }
+            
+            .toc {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .toc-item {
+                grid-template-columns: 2.5rem 1fr;
+                padding: 1rem;
+            }
+            
+            .toc-link {
+                display: none;
+            }
+            
+            .toc-content h3 {
+                font-size: 1rem;
+            }
+            
+            .article {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .article h2 {
+                font-size: 1.5rem;
+            }
+            
+            .article-content h3 {
+                font-size: 1.15rem;
+            }
+            
+            .article-content p,
+            .article-content li {
+                font-size: 1rem;
+            }
+            
+            .pull-quote {
+                font-size: 1rem;
+                padding-left: 1rem;
+            }
+            
+            .key-point {
+                padding: 1rem;
+            }
+            
+            .stats-box {
+                padding: 1rem;
+            }
+            
+            .article-nav {
+                flex-direction: column;
+                gap: var(--space-sm);
+                text-align: center;
+            }
+            
+            .other-dossiers {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .dossiers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta {
+                padding: var(--space-lg) 1.25rem;
+            }
+            
+            .cta h2 {
+                font-size: 1.2rem;
+            }
+            
+            .footer-inner {
+                flex-direction: column;
+                gap: var(--space-sm);
+                text-align: center;
+            }
+            
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+            
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .article h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="https://www.alides.org" class="logo">Alides</a>
+            <nav class="header-nav">
+                <a href="#">Executive Search</a>
+                <a href="#">Gouvernance</a>
+                <a href="#">Dossiers Stratégiques</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <a href="index.html" class="hero-back">← Tous les dossiers</a>
+        <div class="hero-label">Dossier Stratégique</div>
+        <div class="hero-quarter">Q2 2025</div>
+        <h1>Succession : le moment de vérité</h1>
+        <p class="hero-subtitle">La transmission comme test de souveraineté organisationnelle</p>
+    </section>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <p class="intro-epigraph">
+            « Tout empire périra. »<span class="source">— Jean-Baptiste Duroselle</span>
+            « Un pouvoir qui ne se transmet pas est un pouvoir qui s'éteint. »
+        </p>
+        
+        <div class="intro-text">
+            <p>Dans la vie d'une organisation, certains événements fonctionnent comme des stress tests. La succession du dirigeant en fait partie. Non parce qu'elle serait difficile à organiser, mais parce qu'elle révèle ce qu'aucun reporting ne dit : la maturité réelle de la gouvernance, la solidité des équilibres internes, la capacité du système à durer au-delà des figures qui l'incarnent.</p>
+            
+            <p>C'est cela, au fond, la définition d'un pouvoir souverain : un pouvoir transmissible. Un pouvoir dont l'autorité ne dépend pas d'un homme, mais d'une vision, d'un socle, d'une légitimité assez forte pour survivre à ceux qui l'exercent.</p>
+            
+            <p>Ce dossier explore la succession sous quatre angles : une lecture historique et systémique à partir des cycles impériaux, une analyse de la gouvernance en temps de crise, une étude des spécificités familiales, et une réflexion sur la construction d'un vivier stratégique.</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="toc">
+        <h2 class="toc-title">Dans ce dossier</h2>
+        <div class="toc-list">
+            <a href="#article-1" class="toc-item">
+                <span class="toc-number">01</span>
+                <div class="toc-content">
+                    <h3>Succession : le moment de vérité d'une organisation souveraine</h3>
+                    <p>Ce que révèle l'absence de stratégie de succession</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+            <a href="#article-2" class="toc-item">
+                <span class="toc-number">02</span>
+                <div class="toc-content">
+                    <h3>Ce que les empires déclinants nous apprennent</h3>
+                    <p>De Rome à l'Union soviétique : anticiper la relève ou céder face à l'entropie</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+            <a href="#article-3" class="toc-item">
+                <span class="toc-number">03</span>
+                <div class="toc-content">
+                    <h3>Succession en période de crise : quand le board devient stratège</h3>
+                    <p>Faire face à l'incertitude ou la subir. Penser la relève ou l'improviser.</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+            <a href="#article-4" class="toc-item">
+                <span class="toc-number">04</span>
+                <div class="toc-content">
+                    <h3>La succession dans les entreprises familiales</h3>
+                    <p>Entre héritage et stratégie : gouverner la transmission, pas seulement la lignée</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+            <a href="#article-5" class="toc-item">
+                <span class="toc-number">05</span>
+                <div class="toc-content">
+                    <h3>De l'homme providentiel au vivier stratégique</h3>
+                    <p>Repenser la succession comme un actif organisationnel</p>
+                </div>
+                <span class="toc-link">Lire</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="articles">
+
+        <!-- Article 1 -->
+        <article class="article" id="article-1">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 01</span>
+                    <span class="article-dossier">Dossier Q2 2025 — Succession : le moment de vérité</span>
+                </div>
+                <h2>Succession : le moment de vérité d'une organisation souveraine</h2>
+            </div>
+
+            <div class="article-content">
+                <h3>De Rome aux groupes familiaux : le même point de bascule</h3>
+                
+                <p>Dans <em>The Changing World Order</em>, Ray Dalio identifie un invariant historique : les empires déclinent non quand leurs ennemis les abattent, mais lorsqu'ils échouent à renouveler leur propre élite.</p>
+                
+                <p>Patrice Gueniffey va plus loin : le vrai test d'un empire, dit-il, est sa capacité à organiser sa propre relève sans sombrer dans l'anarchie, la fragmentation ou le repli.</p>
+                
+                <p>Ce constat vaut pour toute structure complexe : entreprise cotée, groupe familial, institution publique.</p>
+
+                <div class="key-point">
+                    <p>Ce n'est ni la croissance, ni l'innovation, ni la rentabilité qui distingue une organisation pérenne — mais sa capacité à anticiper, légitimer et orchestrer la transmission du pouvoir exécutif avant qu'elle ne devienne urgente.</p>
+                </div>
+
+                <h3>Ce que révèle l'absence de stratégie de succession</h3>
+                
+                <p>Les chiffres parlent d'eux-mêmes :</p>
+
+                <div class="stats-box">
+                    <ul>
+                        <li>Dans les grandes entreprises, une succession mal préparée détruit jusqu'à <strong>20 % de la valeur actionnariale</strong>.</li>
+                        <li>Dans les groupes familiaux, c'est la <strong>première cause de désalignement intergénérationnel</strong>.</li>
+                        <li>Et dans la majorité des conseils d'administration, la succession reste <strong>un sujet tabou ou reporté</strong>, même en contexte de crise.</li>
+                    </ul>
+                </div>
+                
+                <p>Le problème n'est pas technique. Il est politique.</p>
+                
+                <p>La succession confronte l'organisation à ce qu'elle ne veut pas voir : sa dépendance à une figure centrale, son absence de cap partagé, ou sa peur du vide.</p>
+            </div>
+
+            <nav class="article-nav">
+                <span></span>
+                <a href="#article-2" class="article-nav-next">Article suivant</a>
+            </nav>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="article" id="article-2">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 02</span>
+                    <span class="article-dossier">Dossier Q2 2025 — Succession : le moment de vérité</span>
+                </div>
+                <h2>Ce que les empires déclinants nous apprennent sur la succession des dirigeants</h2>
+                <p class="article-subtitle">Anticiper la relève, ou céder face à l'entropie institutionnelle</p>
+            </div>
+
+            <div class="article-content">
+                <h3>La succession n'est pas un passage : c'est un basculement</h3>
+                
+                <p>Dans l'histoire des empires comme dans celle des entreprises, les grandes bascules n'ont pas toujours lieu quand on le croit. Ce ne sont pas les guerres, les ruptures technologiques ou les crises économiques qui précipitent les déclins les plus profonds. Mais bien souvent, une incapacité à organiser la transmission du pouvoir.</p>
+
+                <div class="pull-quote">
+                    La succession du dirigeant n'est pas un enjeu périphérique ou administratif. C'est une épreuve de vérité institutionnelle. Un moment où l'autorité se détache de l'homme pour tenter — ou échouer — à se refonder dans un autre corps.
+                </div>
+
+                <h3>Quand les empires chutent par absence de relève</h3>
+                
+                <p>Ray Dalio, dans <em>The Changing World Order</em>, identifie un invariant : les empires déclinent non lorsqu'ils sont attaqués, mais quand ils échouent à se renouveler de l'intérieur.</p>
+                
+                <p>Le point de bascule, dans la plupart des cas, n'est pas militaire, mais politique : il correspond à une relève mal préparée, imposée ou retardée.</p>
+                
+                <p>L'histoire impériale en regorge :</p>
+                
+                <ul>
+                    <li><strong>Rome</strong> : après Auguste, la fragilité du système impérial tient à l'absence d'un mécanisme clair de succession ; les guerres civiles deviennent récurrentes.</li>
+                    <li><strong>Les Habsbourg</strong> : minés par des successions consanguines et des rivalités internes, malgré un appareil étatique robuste.</li>
+                    <li><strong>La France post-napoléonienne</strong> : incapacité à stabiliser une lignée légitime durable malgré des élites administratives puissantes.</li>
+                    <li><strong>L'Union soviétique</strong> : succession verrouillée entre apparatchiks, sans capacité d'innovation ou d'incarnation alternative.</li>
+                </ul>
+                
+                <p>Dans tous ces cas, le défaut de préparation ou de légitimation du successeur mène à la fragmentation, à l'usure, ou à la chute brutale.</p>
+
+                <h3>Entreprise et pouvoir : une analogie qui tient</h3>
+                
+                <p>L'analogie avec l'entreprise n'a rien de décoratif : une organisation pérenne fonctionne comme un ordre institutionnel — elle concentre des flux de pouvoir, de ressources, de reconnaissance, autour d'un centre légitime.</p>
+                
+                <p>Quand ce centre se délite — ou ne se transmet plus — les effets sont immédiats :</p>
+                
+                <ul>
+                    <li>Déstabilisation des équipes</li>
+                    <li>Perte de confiance des actionnaires ou clients</li>
+                    <li>Guerre des clans entre héritiers putatifs</li>
+                    <li>Départ des talents et des savoirs critiques</li>
+                    <li>Baisse de la valeur perçue de l'entreprise</li>
+                </ul>
+                
+                <p>Le cas <strong>General Electric</strong>, après Jack Welch, illustre ce phénomène : un pouvoir hyper personnalisé, mais sans architecture pérenne. La transition vers Jeff Immelt, puis ses successeurs, a révélé un vide stratégique profond.</p>
+                
+                <p>Inversement, des groupes comme <strong>Unilever</strong> ou <strong>LVMH</strong> construisent des pipelines de succession sur 5 à 10 ans, combinant évaluation, mentorat, légitimation progressive et scénarisation.</p>
+
+                <h3>Trois erreurs systémiques dans l'histoire comme dans l'entreprise</h3>
+                
+                <ol>
+                    <li><strong>La personnalisation excessive du pouvoir</strong><br>
+                    Quand toute l'autorité repose sur un homme — fondateur, CEO charismatique, patriarche — l'organisation devient orpheline au moment de la transition.</li>
+                    <li><strong>Le retard dans la décision</strong><br>
+                    Reporter la succession jusqu'à l'urgence revient à désarmer l'organisation au moment où elle aurait besoin de projection, pas de confusion.</li>
+                    <li><strong>L'absence de cadre structurant</strong><br>
+                    Sans principes partagés, sans dispositif de légitimation, la transition devient une bataille de forces ou de symboles.</li>
+                </ol>
+
+                <h3>Que doivent faire les organisations souveraines ?</h3>
+                
+                <p>Les conseils d'administration, les actionnaires familiaux, les fondateurs ont une responsabilité claire : ne pas confondre stabilité apparente et continuité réelle.</p>
+                
+                <div class="key-point">
+                    <p>La souveraineté d'un pouvoir ne repose pas sur sa durée d'exercice, mais sur sa capacité à préparer activement sa propre relève.</p>
+                </div>
+                
+                <p>Trois principes clés :</p>
+                <ul>
+                    <li>Instituer la succession comme une fonction du pouvoir, pas une fin de règne</li>
+                    <li>Scénariser les options, les temporalités, les personnalités</li>
+                    <li>Investir dans la légitimité du successeur, pas seulement dans son profil</li>
+                </ul>
+
+                <div class="article-conclusion">
+                    <h4>Gouverner, c'est transmettre</h4>
+                    <p>Ce que montrent les empires, les entreprises familiales et les groupes cotés, c'est la même chose : il ne suffit pas de réussir, il faut se rendre remplaçable.</p>
+                    <p>Car la marque d'un pouvoir vraiment souverain, ce n'est pas sa force actuelle — c'est sa capacité à survivre à ses propres figures.</p>
+                    <p>Il appartient aux gouvernances lucides d'organiser la suite — avant que l'histoire ne la leur impose.</p>
+                </div>
+            </div>
+
+            <nav class="article-nav">
+                <a href="#article-1" class="article-nav-prev">Article précédent</a>
+                <a href="#article-3" class="article-nav-next">Article suivant</a>
+            </nav>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="article" id="article-3">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 03</span>
+                    <span class="article-dossier">Dossier Q2 2025 — Succession : le moment de vérité</span>
+                </div>
+                <h2>Succession en période de crise : quand le conseil d'administration devient stratège</h2>
+                <p class="article-subtitle">Faire face à l'incertitude, ou la subir. Penser la relève, ou l'improviser.</p>
+            </div>
+
+            <div class="article-content">
+                <h3>Les crises révèlent la vérité des pouvoirs</h3>
+                
+                <p>Une crise n'est jamais simplement une perturbation conjoncturelle. C'est un révélateur. Un miroir brutal tendu aux gouvernances.</p>
+                
+                <p>Qu'il s'agisse d'un choc économique, sanitaire, géopolitique ou réputationnel, la crise agit comme un catalyseur : elle accélère les tensions latentes, bouscule les équilibres, déshabille les statuts pour mettre à nu la réalité du pouvoir.</p>
+                
+                <p>Dans ce contexte, la question de la succession du dirigeant prend une dimension décisive. Elle ne relève plus du prévisionnel RH. Elle devient un enjeu de souveraineté. Et le conseil d'administration, s'il veut rester acteur, ne peut plus se contenter d'un rôle de supervision. Il doit redevenir stratège.</p>
+
+                <div class="key-point">
+                    <p>Pourtant, dans 60 % des cas, les plans de succession ne sont pas à jour. Pire : ils ne tiennent compte ni des nouveaux risques, ni des transformations de l'environnement post-crise.</p>
+                </div>
+
+                <h3>Crise + Succession : une combinaison hautement inflammable</h3>
+                
+                <h4>A. Crise = désorientation, pression, polarisation</h4>
+                <p>En situation de crise, les repères s'effondrent. Les collaborateurs doutent, les marchés réagissent, les parties prenantes s'impatientent. Les tensions internes s'exacerbent : faut-il maintenir la stabilité ou initier une rupture ? Faut-il sécuriser l'existant ou incarner un nouveau cap ?</p>
+                
+                <h4>B. La succession devient un enjeu symbolique et politique</h4>
+                <p>Dans ces moments, le dirigeant peut cristalliser l'ancienne époque — celle d'avant la crise. Il devient, malgré lui, un symbole de ce qu'il faut dépasser. L'organisation, elle, cherche des signes clairs : un nouveau visage, une nouvelle énergie, un nouveau langage.</p>
+                
+                <p>Mais sans anticipation, cette transition devient chaotique. Et l'incertitude rend les réflexes classiques inopérants.</p>
+
+                <h4>Quelques cas emblématiques</h4>
+                <ul>
+                    <li><strong>Air France (2022)</strong> : changement de gouvernance en contexte social tendu post-pandémie</li>
+                    <li><strong>Credit Suisse (2023)</strong> : enchaînement de dirigeants dans un climat de défiance systémique</li>
+                    <li><strong>Danone (2021)</strong> : départ du CEO sous pression du conseil, sans plan de relève structuré — résultat : désorientation interne, flottement stratégique</li>
+                </ul>
+
+                <h3>Ce que montrent les données : les conseils sous tension</h3>
+
+                <div class="stats-box">
+                    <ul>
+                        <li><strong>60 %</strong> des conseils d'administration n'ont pas de plan de succession actualisé depuis la dernière crise</li>
+                        <li>Les entreprises sans plan structuré perdent en moyenne <strong>1,8 milliard de dollars</strong> de capitalisation lors d'une transition imprévue</li>
+                        <li>Le référentiel <em>Boards That Lead</em> rappelle que le board n'est pas un organe de validation : il est le garant de la continuité stratégique</li>
+                    </ul>
+                </div>
+                
+                <h4>Trois angles morts récurrents</h4>
+                <ol>
+                    <li><strong>Des plans de succession figés</strong>, conçus comme un exercice de conformité</li>
+                    <li><strong>L'absence de scénarios alternatifs</strong> : interim, tandem, succession externe, plan B…</li>
+                    <li><strong>Une protection excessive du CEO</strong>, parfois jusqu'au déni, empêchant toute discussion lucide</li>
+                </ol>
+
+                <h3>Et si le board redevenait stratège ?</h3>
+                
+                <h4>A. Adopter une logique de design, pas de validation</h4>
+                <p>Le comité de nomination ne peut plus se contenter d'évaluer la performance d'un dirigeant en poste. Il doit se poser des questions de fond :</p>
+                <ul>
+                    <li>Quelle trajectoire stratégique voulons-nous après la crise ?</li>
+                    <li>Quelles compétences doivent incarner cette vision ?</li>
+                    <li>Avons-nous plusieurs options prêtes à activer, dans différentes temporalités ?</li>
+                </ul>
+                
+                <div class="key-point">
+                    <p>La succession devient un acte de design organisationnel — pas un protocole de remplacement.</p>
+                </div>
+
+                <h4>B. Trois leviers à activer</h4>
+                
+                <p><strong>1. Scénarisation de crise</strong><br>
+                Prévoir plusieurs trajectoires : succession planifiée, interim désigné, coprésidence temporaire, passage progressif sous co-accompagnement.</p>
+                
+                <p><strong>2. Évaluation sous contrainte</strong><br>
+                Tester les talents internes dans des contextes simulés de tension : résilience opérationnelle, prise de parole publique, leadership d'influence.</p>
+                
+                <p><strong>3. Communication maîtrisée</strong><br>
+                Une transition floue est plus risquée qu'un départ annoncé. Il faut : préparer les messages, synchroniser les organes (board, COMEX, RH, actionnaires), sécuriser la confiance externe (investisseurs, presse, partenaires).</p>
+
+                <div class="article-conclusion">
+                    <h4>Gouverner le passage, même en mer agitée</h4>
+                    <p>On dit souvent qu'une crise révèle les hommes. C'est vrai. Mais elle révèle surtout la gouvernance.</p>
+                    <p>Un conseil capable d'anticiper, de scénariser et d'accompagner la relève dans les turbulences renforce sa légitimité institutionnelle. Il rassure, il stabilise, il projette.</p>
+                    <p>À l'inverse, une transition mal pensée, improvisée ou dissimulée aggrave la désorientation collective, déstabilise l'image externe et détériore la confiance interne.</p>
+                    <p>La souveraineté d'un board ne se mesure pas dans le confort. Elle se révèle dans sa capacité à piloter le pouvoir… quand le sol tremble.</p>
+                </div>
+            </div>
+
+            <nav class="article-nav">
+                <a href="#article-2" class="article-nav-prev">Article précédent</a>
+                <a href="#article-4" class="article-nav-next">Article suivant</a>
+            </nav>
+        </article>
+
+        <!-- Article 4 -->
+        <article class="article" id="article-4">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 04</span>
+                    <span class="article-dossier">Dossier Q2 2025 — Succession : le moment de vérité</span>
+                </div>
+                <h2>La succession dans les entreprises familiales : entre héritage et stratégie</h2>
+                <p class="article-subtitle">Ce n'est pas la transmission d'un titre. C'est un acte de refondation.</p>
+            </div>
+
+            <div class="article-content">
+                <h3>Gouverner la transmission, pas seulement la lignée</h3>
+                
+                <p>Dans les entreprises familiales, la succession n'est jamais un simple passage de relais. Elle touche à l'intime, à l'identité, à l'histoire. Elle engage des logiques affectives, culturelles, patrimoniales et politiques, souvent entremêlées — et parfois antagonistes.</p>
+                
+                <p>Un fondateur y voit une continuation. Un successeur, une attente. Un conseil de famille, une épreuve. Un actionnaire externe, un risque.</p>
+                
+                <div class="key-point">
+                    <p>Dans ce contexte, transmettre ne suffit pas. Il faut gouverner la relève. C'est-à-dire la penser, la structurer, la légitimer — pour qu'elle ne repose ni sur le hasard, ni sur l'héritage seul.</p>
+                </div>
+
+                <h3>Les tensions singulières du pouvoir familial</h3>
+                
+                <h4>A. Identité vs stratégie</h4>
+                <p>La tentation est forte de choisir un successeur « naturel », un enfant du clan, un porteur du nom. Mais ce choix, s'il repose uniquement sur la filiation, peut entrer en collision avec les exigences du moment.</p>
+                <p>L'enjeu : ne pas faire du nom un projet. L'entreprise ne survit pas à une transmission fondée sur l'attachement seul.</p>
+                
+                <h4>B. Affect vs gouvernance</h4>
+                <p>La relation entre le fondateur et ses enfants est rarement neutre. Elle charrie des non-dits, des projections, des refus de lâcher, des surprotections.</p>
+                <p>Quand l'émotion prend le pas sur le cadre, la transmission devient un terrain de jeux de rôle — pas de souveraineté.</p>
+                
+                <h4>C. Vision long terme vs tabou présent</h4>
+                <p>Dans beaucoup de groupes familiaux, la question de la succession est repoussée — jusqu'au moment où elle devient urgente.</p>
+                <p>Or, c'est précisément cette absence d'anticipation qui fragilise la famille dans son ensemble.</p>
+
+                <h3>Ce que disent les chiffres : une majorité échoue au passage</h3>
+
+                <div class="stats-box">
+                    <ul>
+                        <li><strong>70 %</strong> des entreprises familiales n'atteignent pas la 2e génération</li>
+                        <li><strong>90 %</strong> échouent à transmettre à la 3e génération</li>
+                    </ul>
+                </div>
+                
+                <p>Les causes sont connues :</p>
+                <ul>
+                    <li>Absence de cadre de gouvernance familiale</li>
+                    <li>Succession improvisée</li>
+                    <li>Conflits d'ego ou de vision</li>
+                    <li>Incompréhension entre actionnaires familiaux et management</li>
+                </ul>
+                
+                <p><strong>Cas types :</strong></p>
+                <ul>
+                    <li>Une fille ou un fils reprend la direction « parce qu'il faut bien quelqu'un », sans que son rôle ait été légitimé</li>
+                    <li>Le fondateur refuse de lâcher prise jusqu'à l'épuisement du collectif</li>
+                    <li>Le groupe se retrouve divisé entre membres actifs et passifs, faute de pacte clair</li>
+                </ul>
+                
+                <p>Ces situations, loin d'être anecdotiques, sont structurellement à l'origine de désalignements patrimoniaux, de ruptures de confiance, voire de reventes non désirées.</p>
+
+                <h3>Construire une gouvernance familiale souveraine</h3>
+                
+                <h4>A. Ériger un cadre formel : la gouvernance familiale</h4>
+                <p>La première clé est institutionnelle : créer une architecture claire entre sphère affective et sphère stratégique.</p>
+                <ul>
+                    <li><strong>Conseil de famille</strong> : lieu de dialogue, d'éducation au rôle d'actionnaire, de pré-décision</li>
+                    <li><strong>Constitution familiale</strong> : règles de nomination, valeurs communes, droits et devoirs</li>
+                    <li><strong>Comité de succession</strong> : piloté par des membres mixtes (famille + indépendants), avec des critères formalisés</li>
+                </ul>
+                
+                <h4>B. Travailler la temporalité : préparer avant d'annoncer</h4>
+                <p>La relève ne se décrète pas. Elle se construit :</p>
+                <ul>
+                    <li>Périodes de cohabitation structurée avec le fondateur</li>
+                    <li>Mentorat intergénérationnel, réciproque et progressif</li>
+                    <li>Exposition à la complexité, à l'international, à la controverse</li>
+                </ul>
+                
+                <h4>C. Légitimer le successeur : de l'acceptabilité à l'autorité</h4>
+                <p>La légitimité ne se transmet pas. Elle se conquiert. Cela suppose :</p>
+                <ul>
+                    <li>Un processus d'évaluation structuré, par des parties internes et externes</li>
+                    <li>Une capacité à inspirer une vision propre, sans trahir l'histoire</li>
+                    <li>Une reconnaissance par les pairs, les salariés, les clients-clés</li>
+                </ul>
+
+                <div class="article-conclusion">
+                    <h4>Hériter, c'est refonder</h4>
+                    <p>Transmettre une entreprise familiale ne revient pas à céder un trône. C'est refonder une autorité qui soit capable de durer sans renier.</p>
+                    <p>Cela exige une posture d'architecte : concevoir un cadre pour que le pouvoir ne repose plus sur une personne, mais sur un système familial pérenne ; articuler mémoire, transformation et continuité dans une même ambition ; oser créer une distance saine entre l'entreprise et la famille, pour mieux les relier.</p>
+                    <p>Car dans les groupes familiaux comme dans les empires, ce qui périt, ce n'est pas la grandeur du passé — c'est l'incapacité à organiser l'avenir.</p>
+                </div>
+            </div>
+
+            <nav class="article-nav">
+                <a href="#article-3" class="article-nav-prev">Article précédent</a>
+                <a href="#article-5" class="article-nav-next">Article suivant</a>
+            </nav>
+        </article>
+
+        <!-- Article 5 -->
+        <article class="article" id="article-5">
+            <div class="article-header">
+                <div class="article-meta">
+                    <span class="article-number">ARTICLE 05</span>
+                    <span class="article-dossier">Dossier Q2 2025 — Succession : le moment de vérité</span>
+                </div>
+                <h2>De l'homme providentiel au vivier stratégique : repenser la succession comme un actif organisationnel</h2>
+                <p class="article-subtitle">Une succession n'est pas un scénario. C'est un système vivant, en mouvement.</p>
+            </div>
+
+            <div class="article-content">
+                <h3>1. Du plan caché au capital visible</h3>
+                
+                <p>Dans trop d'organisations, la succession reste un document confidentiel, rangé dans un dossier RH, consulté une fois l'an. Une sorte d'assurance que l'on brandit quand la crise éclate.</p>
+                
+                <p>Ce modèle statique, opaque, et fondé sur des individus désignés, est à rebours des enjeux contemporains :</p>
+                <ul>
+                    <li>Complexité accrue des marchés</li>
+                    <li>Hybridation des compétences dirigeantes</li>
+                    <li>Mobilité accélérée des talents</li>
+                    <li>Attentes nouvelles en matière de gouvernance</li>
+                </ul>
+
+                <div class="key-point">
+                    <p>Dans ce contexte, la succession ne peut plus être un nom dans un tiroir. Elle doit devenir un actif stratégique, piloté, alimenté, réévalué. Non pas autour d'une seule personne, mais comme un vivier cohérent, visible, et aligné.</p>
+                </div>
+
+                <h3>2. Les limites du modèle "homme providentiel"</h3>
+                
+                <h4>A. Le clonage culturel</h4>
+                <p>Trop souvent, les successeurs sont choisis pour leur proximité avec le leader sortant : même formation, même profil, même style. Le but ? Continuer sans heurts.</p>
+                <p>Mais cette logique de clonage crée une forme d'endogamie stratégique : reproduction du statu quo, aveuglement collectif, incapacité à s'adapter aux inflexions majeures.</p>
+                
+                <h4>B. La projection idéalisée</h4>
+                <p>L'inverse existe aussi : le "sauveur" externe, celui qui viendra tout transformer. Sauf que parachuter un dirigeant sans ancrage, sans relais internes, sans alignement stratégique peut désarticuler tout l'écosystème.</p>
+                
+                <h4>C. Le coût de l'improvisation</h4>
+                <p>Chaque transition précipitée coûte : des mois de perte de rythme stratégique, un affaiblissement de la légitimité managériale, des tensions internes sur la culture ou la gouvernance.</p>
+
+                <h3>3. Construire un vivier, pas une liste</h3>
+                
+                <h4>A. Du plan à l'écosystème</h4>
+                <p>Un bon plan de succession ne se limite pas à une short list confidentielle. Il doit être conçu comme un écosystème de talents à différents stades de préparation, dans une logique de flux plus que de stock.</p>
+                
+                <p>Ce vivier peut inclure :</p>
+                <ul>
+                    <li>Des dirigeants internes à haut potentiel</li>
+                    <li>Des profils latents (ex-entreprise, filiales, shadow boards)</li>
+                    <li>Des talents identifiés en externe, mais encore non sollicités</li>
+                    <li>Des binômes ou formes de co-leadership en incubation</li>
+                </ul>
+                
+                <h4>B. Outils clés du pilotage stratégique</h4>
+                <ul>
+                    <li><strong>Leadership Assessment régulier</strong>, indépendant du cycle de crise</li>
+                    <li><strong>Matrice de readiness & fit culturel</strong>, propre à chaque poste stratégique</li>
+                    <li><strong>Shadow boards & programmes miroir</strong>, pour tester sans exposer</li>
+                    <li><strong>Tableaux de scénarisation</strong> : qui incarne quoi, dans quel type de contexte (croissance, crise, fusion…)</li>
+                </ul>
+
+                <h3>4. Les bonnes pratiques des organisations durables</h3>
+                
+                <p>Des groupes leaders ont déjà basculé vers cette vision proactive :</p>
+                
+                <ul>
+                    <li><strong>Unilever</strong> : Pipeline ouvert, évalué sur le long terme par un comité dédié</li>
+                    <li><strong>Microsoft</strong> : Transition Nadella — choix longuement mûri, aligné culturellement</li>
+                    <li><strong>Nestlé</strong> : Politique de "succession systémique" sur les 100 top roles</li>
+                </ul>
+                
+                <div class="key-point">
+                    <p>Ces entreprises ne gèrent pas des successions. Elles construisent une capacité organisationnelle à durer.</p>
+                </div>
+
+                <h3>5. Pour Alides : 5 principes d'une succession stratégique</h3>
+                
+                <ol>
+                    <li><strong>Sortir du secret → passer à la transparence maîtrisée</strong><br>
+                    Le vivier doit être connu, compris, porteur d'ambition collective.</li>
+                    <li><strong>Évaluer sans figer</strong><br>
+                    Ce n'est pas parce qu'un profil est prêt aujourd'hui qu'il le sera demain — et inversement.</li>
+                    <li><strong>Aligner culture et cap stratégique</strong><br>
+                    Le bon successeur n'est pas celui qui "rassure", mais celui qui "incarne le futur possible".</li>
+                    <li><strong>Inclure les parties prenantes</strong><br>
+                    Actionnaires, COMEX, RH, board : chacun doit participer au processus, à son niveau.</li>
+                    <li><strong>Distinguer remplaçabilité et souveraineté</strong><br>
+                    Ce n'est pas en étant indispensable qu'on gouverne bien, mais en rendant possible son remplacement légitime.</li>
+                </ol>
+
+                <div class="article-conclusion">
+                    <h4>Gouverner la relève, c'est investir dans le temps long</h4>
+                    <p>Un vrai pouvoir ne se mesure pas à sa capacité à durer, mais à sa capacité à créer les conditions de sa propre relève.</p>
+                    <p>Passer d'un modèle de succession nominative à une approche systémique, c'est faire un choix stratégique. Un choix de souveraineté.</p>
+                    <p>Car dans un monde incertain, le plus grand luxe n'est pas d'avoir un dirigeant fort. C'est d'avoir toujours plusieurs options solides — prêtes, légitimes, alignées.</p>
+                    <p>« La véritable souveraineté n'est pas d'exercer le pouvoir, mais de garantir sa continuité légitime. »</p>
+                </div>
+            </div>
+
+            <nav class="article-nav">
+                <a href="#article-4" class="article-nav-prev">Article précédent</a>
+                <span></span>
+            </nav>
+        </article>
+
+    </section>
+
+    <!-- Other Dossiers -->
+    <section class="other-dossiers">
+        <div class="other-dossiers-inner">
+            <h2 class="section-title">Autres dossiers stratégiques</h2>
+            <div class="dossiers-grid">
+                <a href="dossier-q4-2025.html" class="dossier-card">
+                    <div class="dossier-card-quarter">Q4 2025</div>
+                    <h3>Leadership sous tension</h3>
+                    <p>3 articles · Le dirigeant face à l'épuisement et la solitude du pouvoir</p>
+                </a>
+                <a href="dossier-q3-2025-complet.html" class="dossier-card">
+                    <div class="dossier-card-quarter">Q3 2025</div>
+                    <h3>Gouverner sans illusion</h3>
+                    <p>5 articles · Ce que montre (et cache) votre système de contrôle</p>
+                </a>
+                <a href="dossier-ete-2025-complet.html" class="dossier-card">
+                    <div class="dossier-card-quarter">ÉTÉ 2025</div>
+                    <h3>L'été des dirigeants lucides</h3>
+                    <p>5 articles · Cinq décisions clés avant la rentrée</p>
+                </a>
+                <a href="dossier-q1-2025-complet.html" class="dossier-card">
+                    <div class="dossier-card-quarter">Q1 2025</div>
+                    <h3>Gouverner dans un monde fragmenté</h3>
+                    <p>4 articles · Ce que les PDG doivent anticiper</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-inner">
+            <h2>Votre organisation prépare-t-elle sa relève avec la rigueur qu'elle mérite ?</h2>
+            <a href="https://www.alides.org/contact" class="cta-btn">Échangeons en toute confidentialité</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="https://www.alides.org">Alides.org</a>
+                <a href="#">Executive Search</a>
+                <a href="#">Gouvernance</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footer-copy">© 2025 Alides · Member of ECI Group</div>
+        </div>
+    </footer>
+
+</body>
+</html>

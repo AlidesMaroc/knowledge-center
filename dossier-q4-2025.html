@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership sous tension — Dossier Stratégique | Alides</title>
+    <meta name="description" content="Dossier stratégique sur la crise des CEO, le succession planning et la relation Board-CEO. Analyses et recommandations pour les Boards et dirigeants.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-midnight: #0a0f1a;
+            --color-deep-blue: #0d1829;
+            --color-navy: #1a2744;
+            --color-slate: #2d3a52;
+            --color-steel: #4a5d7a;
+            --color-silver: #8899b3;
+            --color-pearl: #c8d4e8;
+            --color-ivory: #f4f6f9;
+            --color-white: #ffffff;
+            --color-gold: #c9a962;
+            --color-gold-muted: #a08840;
+            
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Source Serif 4', Georgia, serif;
+            --font-ui: 'Inter', -apple-system, sans-serif;
+            
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 4rem;
+            --spacing-xl: 6rem;
+            --spacing-xxl: 10rem;
+            
+            --max-width: 1200px;
+            --max-width-text: 720px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            font-size: 18px;
+            line-height: 1.7;
+            color: var(--color-midnight);
+            background: var(--color-ivory);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* ==================== HEADER NAV ==================== */
+        
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 15, 26, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 1rem 2rem;
+            transition: all 0.4s ease;
+        }
+        
+        .site-header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'EB Garamond', Garamond, Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--color-white);
+            text-decoration: none;
+            letter-spacing: 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: var(--color-silver);
+            text-decoration: none;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--color-white);
+        }
+        
+        /* ==================== HERO ==================== */
+        
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(165deg, var(--color-midnight) 0%, var(--color-deep-blue) 50%, var(--color-navy) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: var(--spacing-xxl) var(--spacing-md);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(201, 169, 98, 0.03) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(74, 93, 122, 0.15) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+        
+        .hero-label {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--color-gold);
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            margin-bottom: var(--spacing-md);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.2s forwards;
+        }
+        
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 400;
+            color: var(--color-white);
+            line-height: 1.1;
+            margin-bottom: var(--spacing-md);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.4s forwards;
+        }
+        
+        .hero-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: var(--color-silver);
+            max-width: 600px;
+            margin: 0 auto var(--spacing-lg);
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 0.6s forwards;
+        }
+        
+        .hero-scroll {
+            position: absolute;
+            bottom: var(--spacing-lg);
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease 1s forwards;
+        }
+        
+        .hero-scroll span {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            color: var(--color-steel);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+        
+        .scroll-line {
+            width: 1px;
+            height: 60px;
+            background: linear-gradient(to bottom, var(--color-steel), transparent);
+            animation: scrollPulse 2s ease infinite;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes scrollPulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+        
+        /* ==================== INTRODUCTION ==================== */
+        
+        .introduction {
+            background: var(--color-white);
+            padding: var(--spacing-xl) var(--spacing-md);
+        }
+        
+        .introduction-inner {
+            max-width: var(--max-width-text);
+            margin: 0 auto;
+        }
+        
+        .intro-text {
+            font-family: var(--font-body);
+            font-size: 1.35rem;
+            font-weight: 300;
+            line-height: 1.9;
+            color: var(--color-slate);
+            font-style: italic;
+        }
+        
+        .intro-text::first-letter {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 600;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.5rem;
+            margin-top: 0.15rem;
+            color: var(--color-navy);
+        }
+        
+        /* ==================== ARTICLES GRID ==================== */
+        
+        .articles-section {
+            background: var(--color-ivory);
+            padding: var(--spacing-xl) var(--spacing-md);
+        }
+        
+        .articles-section-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .section-label {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--color-steel);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: var(--color-midnight);
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        @media (max-width: 900px) {
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+        
+        .article-card {
+            background: var(--color-white);
+            border-radius: 2px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(10, 15, 26, 0.12);
+        }
+        
+        .article-card-image {
+            aspect-ratio: 4/3;
+            background: var(--color-deep-blue);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .article-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: all 0.6s ease;
+        }
+        
+        .article-card:hover .article-card-image img {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+        
+        .article-number {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--color-white);
+            opacity: 0.4;
+            line-height: 1;
+        }
+        
+        .article-card-content {
+            padding: 2rem;
+        }
+        
+        .article-card-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--color-midnight);
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        .article-card-excerpt {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--color-slate);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .article-read-time {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            color: var(--color-steel);
+            letter-spacing: 0;
+            text-transform: uppercase;
+        }
+        
+        .article-link {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--color-navy);
+            text-decoration: none;
+            letter-spacing: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .article-link:hover {
+            color: var(--color-gold-muted);
+        }
+        
+        .article-link svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s ease;
+        }
+        
+        .article-card:hover .article-link svg {
+            transform: translateX(4px);
+        }
+        
+        /* ==================== ARTICLE FULL ==================== */
+        
+        .article-full {
+            background: var(--color-white);
+            padding: var(--spacing-xl) var(--spacing-md);
+            border-top: 1px solid var(--color-pearl);
+        }
+        
+        .article-full:nth-child(even) {
+            background: var(--color-ivory);
+        }
+        
+        .article-full-inner {
+            max-width: var(--max-width-text);
+            margin: 0 auto;
+        }
+        
+        .article-full-header {
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--color-pearl);
+        }
+        
+        .article-full-number {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            color: var(--color-gold-muted);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .article-full-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 400;
+            color: var(--color-midnight);
+            line-height: 1.2;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .article-full-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--color-slate);
+        }
+        
+        .article-full-body {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--color-slate);
+        }
+        
+        .article-full-body p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            hyphens: auto;
+        }
+        
+        .article-full-body p:first-of-type::first-letter {
+            font-family: var(--font-display);
+            font-size: 4.5rem;
+            font-weight: 500;
+            float: left;
+            line-height: 0.75;
+            margin-right: 0.6rem;
+            margin-top: 0.2rem;
+            color: var(--color-navy);
+        }
+        
+        .pull-quote {
+            margin: var(--spacing-lg) 0;
+            padding: var(--spacing-md) 0;
+            border-top: 1px solid var(--color-pearl);
+            border-bottom: 1px solid var(--color-pearl);
+        }
+        
+        .pull-quote blockquote {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-style: italic;
+            font-weight: 400;
+            color: var(--color-navy);
+            line-height: 1.5;
+            text-align: center;
+        }
+        
+        /* ==================== WHITE PAPER CTA ==================== */
+        
+        .whitepaper-section {
+            background: var(--color-deep-blue);
+            padding: var(--spacing-xl) var(--spacing-md);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .whitepaper-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 10% 90%, rgba(201, 169, 98, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 90% 10%, rgba(74, 93, 122, 0.2) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .whitepaper-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .whitepaper-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto var(--spacing-md);
+            background: rgba(201, 169, 98, 0.1);
+            border: 1px solid rgba(201, 169, 98, 0.3);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whitepaper-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: var(--color-gold);
+        }
+        
+        .whitepaper-label {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--color-gold);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .whitepaper-title {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: var(--color-white);
+            line-height: 1.3;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .whitepaper-desc {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            color: var(--color-silver);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .whitepaper-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2.5rem;
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            color: var(--color-midnight);
+            background: var(--color-gold);
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .whitepaper-btn:hover {
+            background: var(--color-white);
+            transform: translateY(-2px);
+        }
+        
+        .whitepaper-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        /* ==================== SOURCES ==================== */
+        
+        .sources-section {
+            background: var(--color-ivory);
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+        
+        .sources-inner {
+            max-width: var(--max-width-text);
+            margin: 0 auto;
+        }
+        
+        .sources-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--color-midnight);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .sources-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .source-item {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+        }
+        
+        .source-bullet {
+            width: 6px;
+            height: 6px;
+            background: var(--color-gold-muted);
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 0.6rem;
+        }
+        
+        .source-item a {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--color-slate);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .source-item a:hover {
+            color: var(--color-navy);
+        }
+        
+        .source-item span {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            color: var(--color-steel);
+        }
+        
+        /* ==================== ABOUT ==================== */
+        
+        .about-section {
+            background: var(--color-white);
+            padding: var(--spacing-lg) var(--spacing-md);
+            border-top: 1px solid var(--color-pearl);
+        }
+        
+        .about-inner {
+            max-width: var(--max-width-text);
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .about-text {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--color-slate);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .about-contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-ui);
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--color-navy);
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border: 1px solid var(--color-navy);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .about-contact:hover {
+            background: var(--color-navy);
+            color: var(--color-white);
+        }
+        
+        /* ==================== FOOTER ==================== */
+        
+        .site-footer {
+            background: var(--color-midnight);
+            padding: var(--spacing-lg) var(--spacing-md);
+        }
+        
+        .footer-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-family: 'EB Garamond', Garamond, Georgia, serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--color-white);
+            letter-spacing: 0;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .footer-links a {
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            color: var(--color-steel);
+            text-decoration: none;
+            letter-spacing: 0;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--color-white);
+        }
+        
+        .footer-copyright {
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            color: var(--color-steel);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 17px;
+            }
+            
+            .site-header {
+                padding: 0.8rem 1rem;
+            }
+            
+            .footer-inner {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .hero {
+                padding: 100px 1.25rem 2.5rem;
+                min-height: auto;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .intro-section {
+                padding: 2.5rem 1.25rem;
+            }
+            
+            .intro-text {
+                font-size: 1rem;
+            }
+            
+            .toc-section {
+                padding: 2.5rem 1.25rem;
+            }
+            
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .toc-item h3 {
+                font-size: 1.1rem;
+            }
+            
+            .article-section {
+                padding: 2.5rem 1.25rem;
+            }
+            
+            .article-title {
+                font-size: 1.5rem;
+            }
+            
+            .article-section h3 {
+                font-size: 1.15rem;
+            }
+            
+            .highlight-box {
+                padding: 1.25rem;
+            }
+            
+            blockquote {
+                font-size: 1rem;
+                padding-left: 1rem;
+            }
+            
+            .about-section {
+                padding: 2.5rem 1.25rem;
+            }
+            
+            .cta-section {
+                padding: 2.5rem 1.25rem;
+            }
+            
+            .cta-title {
+                font-size: 1.3rem;
+            }
+            
+            .footer {
+                padding: 1.5rem 1.25rem;
+            }
+            
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                font-size: 16px;
+            }
+            
+            .hero-title {
+                font-size: 1.6rem;
+            }
+            
+            .article-title {
+                font-size: 1.3rem;
+            }
+        }
+        
+        /* ==================== SMOOTH REVEAL ==================== */
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="https://www.alides.org" class="logo">Alides</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="https://www.alides.org/executive-search-1">Executive Search</a></li>
+                    <li><a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a></li>
+                    <li><a href="https://www.alides.org/board-services">Board Services</a></li>
+                    <li><a href="#">Dossiers</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-label">Dossier Stratégique — Q4 2025</p>
+            <h1 class="hero-title">Leadership sous tension</h1>
+            <p class="hero-subtitle">Crise des CEO, succession et gouvernance : ce que les Boards doivent comprendre</p>
+        </div>
+        <div class="hero-scroll">
+            <span>Découvrir</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="introduction">
+        <div class="introduction-inner reveal">
+            <p class="intro-text">Le rôle de CEO traverse une crise silencieuse. Les mandats se raccourcissent, les départs se multiplient, la pression s'intensifie. Ce dossier propose aux Boards et dirigeants une lecture structurée des enjeux de succession, de gouvernance et de relation au sommet. Trois analyses complémentaires pour comprendre ce qui se joue aujourd'hui dans les étages les plus élevés des organisations.</p>
+        </div>
+    </section>
+
+    <!-- ARTICLES GRID -->
+    <section class="articles-section">
+        <div class="articles-section-inner">
+            <div class="section-header reveal">
+                <p class="section-label">Trois perspectives</p>
+                <h2 class="section-title">Le dossier</h2>
+            </div>
+            
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card reveal" onclick="document.getElementById('article-1').scrollIntoView({behavior: 'smooth'})">
+                    <div class="article-card-image">
+                        <div style="width:100%;height:100%;background:linear-gradient(135deg, #0d1829 0%, #1a2744 100%);"></div>
+                        <span class="article-number">01</span>
+                    </div>
+                    <div class="article-card-content">
+                        <h3 class="article-card-title">La crise silencieuse des CEO</h3>
+                        <p class="article-card-excerpt">Turnover record, mandats raccourcis, burnout invisible : anatomie d'une transformation profonde du leadership exécutif.</p>
+                        <div class="article-card-meta">
+                            <span class="article-read-time">5 min de lecture</span>
+                            <a href="#article-1" class="article-link">
+                                Lire
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 2 -->
+                <article class="article-card reveal" onclick="document.getElementById('article-2').scrollIntoView({behavior: 'smooth'})" style="transition-delay: 0.1s;">
+                    <div class="article-card-image">
+                        <div style="width:100%;height:100%;background:linear-gradient(135deg, #1a2744 0%, #2d3a52 100%);"></div>
+                        <span class="article-number">02</span>
+                    </div>
+                    <div class="article-card-content">
+                        <h3 class="article-card-title">Assurer demain</h3>
+                        <p class="article-card-excerpt">L'art difficile du succession planning : pourquoi les Boards doivent transformer un événement ponctuel en discipline permanente.</p>
+                        <div class="article-card-meta">
+                            <span class="article-read-time">6 min de lecture</span>
+                            <a href="#article-2" class="article-link">
+                                Lire
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 3 -->
+                <article class="article-card reveal" onclick="document.getElementById('article-3').scrollIntoView({behavior: 'smooth'})" style="transition-delay: 0.2s;">
+                    <div class="article-card-image">
+                        <div style="width:100%;height:100%;background:linear-gradient(135deg, #2d3a52 0%, #4a5d7a 100%);"></div>
+                        <span class="article-number">03</span>
+                    </div>
+                    <div class="article-card-content">
+                        <h3 class="article-card-title">Le leadership vulnérable</h3>
+                        <p class="article-card-excerpt">Ce que les conseils d'administration doivent désormais accepter pour construire une gouvernance durable.</p>
+                        <div class="article-card-meta">
+                            <span class="article-read-time">6 min de lecture</span>
+                            <a href="#article-3" class="article-link">
+                                Lire
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTICLE 1 FULL -->
+    <section class="article-full" id="article-1">
+        <div class="article-full-inner reveal">
+            <header class="article-full-header">
+                <p class="article-full-number">Article 01</p>
+                <h2 class="article-full-title">La crise silencieuse des CEO</h2>
+                <p class="article-full-subtitle">Pourquoi les mandats se raccourcissent et ce que cela révèle de la gouvernance contemporaine</p>
+            </header>
+            <div class="article-full-body">
+                <p>Une transformation profonde est en cours dans les étages les plus élevés des organisations. Elle ne fait pas la une des journaux économiques, mais elle redéfinit silencieusement les règles du pouvoir exécutif. Le premier semestre 2025 a enregistré un nombre record de départs de CEO dans les grandes entreprises mondiales. Ce mouvement n'est pas conjoncturel. Il traduit une mutation structurelle du rôle de dirigeant, devenu à la fois plus exposé, plus exigeant et plus fragile qu'il ne l'a jamais été.</p>
+                
+                <p>Les chiffres parlent d'eux-mêmes. La durée moyenne des mandats de CEO a chuté significativement en quelques années seulement. Cette accélération ne touche plus uniquement les dirigeants en difficulté. Les CEO performants quittent également leurs fonctions plus tôt, souvent épuisés par une charge cognitive devenue insoutenable. La pression des actionnaires, l'accélération technologique, les crises à répétition et l'exposition médiatique permanente ont transformé la fonction en un exercice d'équilibriste où la moindre erreur devient fatale.</p>
+                
+                <div class="pull-quote">
+                    <blockquote>« Ce n'est pas la peur qui épuise, c'est l'impossibilité de la partager. »</blockquote>
+                </div>
+                
+                <p>Derrière ces départs se cache une réalité rarement évoquée : le burnout exécutif. Les études récentes révèlent qu'une proportion alarmante de dirigeants présente des symptômes compatibles avec une dépression clinique. La majorité des CEO rapportent des sentiments de solitude qui affectent leur capacité de décision. Cette fatigue invisible n'est pas un accident individuel. Elle est le symptôme d'un système qui valorise l'endurance plus que la lucidité, et qui confond la résistance avec la compétence.</p>
+                
+                <p>Le paradoxe est saisissant. Au moment où les entreprises ont le plus besoin de stabilité et de vision à long terme, leurs dirigeants n'ont jamais été aussi vulnérables. La gouvernance moderne se trouve face à un dilemme qu'elle n'a pas anticipé : comment préserver la capacité de jugement de ceux qui décident, quand tout dans l'environnement conspire à l'éroder ? La réponse ne se trouve pas dans le recrutement de profils plus résistants. Elle se trouve dans une transformation profonde de la relation entre le CEO et son Board.</p>
+                
+                <p>Car c'est bien là que se situe l'angle mort. La plupart des conseils d'administration continuent d'évaluer leurs dirigeants sur des critères de performance financière, sans jamais interroger les conditions dans lesquelles cette performance est produite. Ils attendent des résultats sans créer l'espace nécessaire au discernement. Ils valorisent la maîtrise apparente sans percevoir l'usure réelle. Cette cécité n'est pas une faute morale. Elle est le produit d'une conception datée de la gouvernance, héritée d'une époque où la stabilité était la norme et où le temps long restait accessible.</p>
+                
+                <p>Au Maroc, cette crise prend une coloration particulière. Dans les groupes familiaux, la proximité entre actionnaires et dirigeants peut masquer les signaux de fatigue. Dans les ETI en croissance rapide, la pression opérationnelle laisse peu de place à la prise de recul. Dans les Family Offices en transition, la gouvernance hésite encore entre logique patrimoniale et logique institutionnelle. Ces contextes spécifiques n'immunisent pas contre la crise du leadership. Ils la rendent simplement moins visible, jusqu'au moment où elle devient impossible à ignorer.</p>
+                
+                <p>Les organisations qui traverseront cette période avec succès seront celles qui auront compris que la continuité ne se décrète pas. Elle se prépare. Elle se construit. Elle s'entretient. Celles qui refuseront de voir ce qui se joue continueront de perdre leurs meilleurs dirigeants, de subir des transitions brutales, et de confondre le silence avec la solidité. La crise des CEO n'est pas une fatalité. C'est un signal. À ceux qui sauront le lire, il offre une opportunité rare : repenser la gouvernance avant qu'elle ne soit contrainte de le faire dans l'urgence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTICLE 2 FULL -->
+    <section class="article-full" id="article-2">
+        <div class="article-full-inner reveal">
+            <header class="article-full-header">
+                <p class="article-full-number">Article 02</p>
+                <h2 class="article-full-title">Assurer demain</h2>
+                <p class="article-full-subtitle">L'art difficile du succession planning</p>
+            </header>
+            <div class="article-full-body">
+                <p>Dans un monde où la fonction de CEO se fragilise, où les mandats se raccourcissent et où la pression organisationnelle atteint un niveau inédit, la question de la succession n'est plus un sujet périphérique. Elle devient un exercice fondateur de la gouvernance moderne. Les boards qui, hier encore, appréhendaient la succession comme un événement ponctuel, découvrent désormais qu'elle constitue un travail continu, un effort de projection, parfois même une forme de discipline intellectuelle. La stabilité d'une entreprise ne tient plus seulement à la performance d'un dirigeant, mais à la capacité collective d'imaginer celui qui devra porter l'organisation vers son prochain chapitre.</p>
+                
+                <p>Préparer un successeur commence toujours par un geste simple, mais rarement accompli : accepter que le futur dirigeant ne sera pas la reproduction de celui d'aujourd'hui. Les organisations qui cherchent à remplacer un CEO par son miroir créent une illusion de continuité qui se brise au premier virage stratégique. Le rôle évolue trop vite pour cette logique mimétique. Les priorités se déplacent, les compétences critiques se transforment, les cycles se raccourcissent. La seule manière de préparer l'avenir consiste à partir des enjeux à trois ou cinq ans, à examiner les futures lignes de fracture du marché, à comprendre les ruptures potentielles du business model, puis à en déduire le type de leadership capable d'y répondre.</p>
+                
+                <div class="pull-quote">
+                    <blockquote>« Une succession n'est pas une reproduction ; c'est une anticipation. »</blockquote>
+                </div>
+                
+                <p>Vient ensuite une idée tout aussi essentielle : la succession n'est pas une décision, mais un processus. Nommer un dirigeant ne suffit jamais à le préparer. Les boards qui confondent nomination et montée en puissance exposent l'organisation à une transition fragile, parfois risquée. Rien ne remplace le temps nécessaire pour affiner un jugement, observer les comportements dans des situations critiques, confronter les candidats à des responsabilités nouvelles et analyser leur capacité à influencer l'organisation au-delà de leur périmètre formel. La préparation d'un successeur exige de la patience, un cadre, un suivi, et une forme de constance rarement présente dans les organisations qui vivent au rythme de l'urgence.</p>
+                
+                <p>Cette préparation s'appuie sur un principe fondamental : la transparence. Les transitions apaisées reposent sur une compréhension partagée du processus. Les règles doivent être explicites, les critères clairs, la logique de décision assumée. Une succession opaque crée des tensions invisibles, fragilise le futur dirigeant et nourrit une compétition interne improductive. À l'inverse, un processus lisible, même lorsqu'il demeure confidentiel, offre un cadre d'équité, soutient la légitimité du successeur et clarifie les attentes pour tous les candidats.</p>
+                
+                <p>Pour le Maroc, cet exercice revêt une importance particulière. La place historique des fondateurs, la rareté relative des talents dirigeants expérimentés, la montée en puissance des groupes familiaux, et la formalisation progressive des gouvernances créent un terrain où la succession est à la fois sensible et déterminante. Les organisations qui n'ont pas structuré leur pipeline de leadership s'exposent à des transitions brutales, à des ruptures de vision, à une perte de cohérence interne. À l'inverse, celles qui investissent dans la préparation de leurs successeurs, qui créent les conditions d'une montée en puissance progressive, et qui établissent une gouvernance capable d'accompagner ce cheminement, se donnent un avantage rare : celui d'inscrire leur trajectoire dans le temps long.</p>
+                
+                <p>Au fond, la succession n'est pas un exercice de continuité. C'est un exercice de maturité. Elle engage la capacité d'une organisation à se penser comme un système, et non comme la somme de ses dirigeants successifs. Elle exige de dépasser l'urgence, de créer un espace où la réflexion prend le pas sur la réaction, où la lucidité remplace le réflexe, où la responsabilité collective devient plus importante que les trajectoires individuelles. Les entreprises qui réussiront les prochaines années seront celles qui auront compris que la continuité n'est jamais un acquis. Qu'elle se prépare, qu'elle se construit, qu'elle s'entretient. Assurer demain n'est pas une option. C'est la responsabilité première de toute gouvernance qui aspire à durer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ARTICLE 3 FULL -->
+    <section class="article-full" id="article-3">
+        <div class="article-full-inner reveal">
+            <header class="article-full-header">
+                <p class="article-full-number">Article 03</p>
+                <h2 class="article-full-title">Le leadership vulnérable</h2>
+                <p class="article-full-subtitle">Ce que les conseils d'administration doivent désormais accepter</p>
+            </header>
+            <div class="article-full-body">
+                <p>Il existe des transformations lentes, presque silencieuses, qui redéfinissent en profondeur l'exercice du pouvoir exécutif. La vulnérabilité du CEO en fait partie. Longtemps perçue comme une faiblesse ou un risque d'exposition, elle émerge aujourd'hui comme l'une des compétences les plus déterminantes de la lucidité stratégique. Un dirigeant d'un grand groupe international confiait récemment que « la seule manière de survivre à la complexité actuelle consiste à reconnaître ce que l'on ne maîtrise plus ». Cette phrase, en apparence simple, résume une évolution structurelle du leadership contemporain : l'infaillibilité n'est plus un atout, elle est devenue un obstacle.</p>
+                
+                <p>La fonction de CEO repose désormais sur une accumulation de décisions irréversibles, prises dans un brouillard informationnel permanent. Les cycles se sont contractés, les crises se superposent, la pression cognitive s'intensifie. Plusieurs études menées auprès de dirigeants confirment ce glissement : l'essentiel de la fatigue exécutive ne provient plus du volume de travail, mais de la nécessité de projeter une maîtrise totale dans un environnement qui ne se laisse plus maîtriser. L'un des CEO interrogés dans une enquête internationale sur la vulnérabilité résume la situation sans détour : « Ce n'est pas la peur qui épuise, c'est l'impossibilité de la partager. »</p>
+                
+                <div class="pull-quote">
+                    <blockquote>« Dire la vérité n'a jamais affaibli un dirigeant. Ce qui l'affaiblit, c'est de devoir la porter seul. »</blockquote>
+                </div>
+                
+                <p>Ce constat place le Conseil d'Administration devant une responsabilité nouvelle. Le Board n'est plus uniquement chargé de superviser, de questionner, d'approuver. Il devient l'un des rares espaces où le dirigeant peut dire ce qui dérange, exposer les zones d'incertitude, reconnaître les tensions avant qu'elles ne se transforment en crises. Une analyse récente de la relation CEO–Board montre que les transitions les plus difficiles ne proviennent pas d'une mauvaise décision, mais d'une vérité qui n'a pas été dite à temps. Lorsque la vulnérabilité est impossible, les signaux faibles disparaissent.</p>
+                
+                <p>Les Boards les plus matures reconnaissent cette dynamique. Ils savent qu'un dirigeant qui dissimule les difficultés n'est pas plus solide ; il est simplement plus seul. Ils comprennent que la vulnérabilité n'est pas un débordement émotionnel, mais un mécanisme de précision décisionnelle. Ils encouragent le CEO à partager ce qui n'est pas stabilisé, non pour s'y substituer, mais pour élargir le cadre d'analyse. Un président de conseil expérimenté le formule ainsi : « Dire la vérité n'a jamais affaibli un dirigeant. Ce qui l'affaiblit, c'est de devoir la porter seul. »</p>
+                
+                <p>Le contexte marocain donne à cette évolution une résonance particulière. Dans les groupes familiaux, la relation entre fondateur, héritiers et dirigeants externes est chargée d'histoire, de loyauté, d'émotions parfois silencieuses. La vulnérabilité peut y apparaître comme une dissonance culturelle. Dans les ETI en forte croissance, la pression opérationnelle réduit le temps disponible pour un dialogue stratégique authentique. Dans les Family Offices en transition, la gouvernance oscille encore entre logique patrimoniale et logique institutionnelle. Dans chacun de ces environnements, la tentation de maintenir l'apparence de maîtrise est forte. Pourtant, c'est précisément dans ces organisations que la vulnérabilité est devenue un levier de performance.</p>
+                
+                <p>Les dirigeants qui acceptent cette nouvelle exigence ne renoncent pas à l'autorité. Ils la redéfinissent. Ils savent que l'époque ne récompense plus ceux qui prétendent tout savoir, mais ceux qui parviennent à mobiliser l'intelligence collective autour de ce qu'ils ne savent pas encore. Ils comprennent que la vulnérabilité n'est pas une exposition individuelle ; c'est la capacité à exposer la réalité pour permettre à l'organisation de la traiter. Ils s'autorisent à dire ce qui les inquiète, non pour se soulager, mais pour éviter la prise de décision isolée.</p>
+                
+                <p>Les Boards, de leur côté, découvrent que la vulnérabilité du CEO impose une transformation équivalente de leur propre posture. Ils doivent créer un espace où les questions ne sont pas des mises en cause, où le désaccord ne menace pas la relation, où les sujets sensibles peuvent émerger sans être politisés. Ils doivent accepter que soutenir un dirigeant ne consiste pas à réduire la difficulté, mais à en partager la charge. Ils doivent comprendre que la vulnérabilité n'est ni un risque réputationnel ni une faiblesse institutionnelle : elle est devenue l'un des déterminants de la continuité stratégique.</p>
+                
+                <p>Les organisations qui intégreront cette discipline de manière consciente disposeront d'un avantage structurel dans un environnement où l'instabilité est devenue permanente. Celles qui s'y refuseront continueront de confondre le silence avec la solidité, l'apparence avec la stabilité, et la maîtrise affichée avec la maîtrise réelle. Le leadership vulnérable n'est pas un renoncement. C'est une forme avancée de courage. Et c'est, aujourd'hui, l'une des conditions les plus sûres de la continuité.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHITE PAPER CTA -->
+    <section class="whitepaper-section">
+        <div class="whitepaper-inner reveal">
+            <div class="whitepaper-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                </svg>
+            </div>
+            <p class="whitepaper-label">Guide complet</p>
+            <h3 class="whitepaper-title">Repenser la succession des CEO<br>dans un monde instable</h3>
+            <p class="whitepaper-desc">Notre white paper de 9 pages détaille la méthodologie complète de succession planning : diagnostic, processus, gouvernance et spécificités du contexte marocain.</p>
+            <a href="#" class="whitepaper-btn">
+                Recevoir le guide
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- SOURCES -->
+    <section class="sources-section">
+        <div class="sources-inner reveal">
+            <h3 class="sources-title">Pour aller plus loin</h3>
+            <div class="sources-list">
+                <div class="source-item">
+                    <span class="source-bullet"></span>
+                    <div>
+                        <a href="https://www.nacdonline.org" target="_blank">NACD 2025 — Building a High-Trust Board-CEO Relationship</a>
+                        <span> — National Association of Corporate Directors</span>
+                    </div>
+                </div>
+                <div class="source-item">
+                    <span class="source-bullet"></span>
+                    <div>
+                        <a href="https://www.mckinsey.com" target="_blank">McKinsey — CEO Excellence Revisited</a>
+                        <span> — The Six Mindsets That Distinguish the Best Leaders</span>
+                    </div>
+                </div>
+                <div class="source-item">
+                    <span class="source-bullet"></span>
+                    <div>
+                        <a href="https://hbr.org" target="_blank">Harvard Business Review — How CEOs Can Build Better Board Relationships</a>
+                        <span> — Mai 2025</span>
+                    </div>
+                </div>
+                <div class="source-item">
+                    <span class="source-bullet"></span>
+                    <div>
+                        <a href="https://www.russellreynolds.com" target="_blank">Russell Reynolds — Global CEO Turnover Index</a>
+                        <span> — Q3 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+        <div class="about-inner reveal">
+            <p class="about-text">Ce dossier a été conçu par Alides dans le cadre de sa mission de conseil en gouvernance et leadership. Nous accompagnons les Boards, Family Offices et entreprises au Maroc, en Afrique et au Qatar dans leurs enjeux de succession, de recrutement de dirigeants et de structuration de gouvernance.</p>
+            <a href="https://www.alides.org/contact" class="about-contact">
+                Échanger sur ces enjeux
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-logo">Alides</span>
+            <div class="footer-links">
+                <a href="https://www.alides.org">Accueil</a>
+                <a href="https://www.alides.org/executive-search-1">Executive Search</a>
+                <a href="https://www.alides.org/leadership-advisory">Leadership Advisory</a>
+                <a href="https://www.linkedin.com/company/alides-africa" target="_blank">LinkedIn</a>
+            </div>
+            <span class="footer-copyright">© 2025 Alides. Tous droits réservés.</span>
+        </div>
+    </footer>
+
+    <!-- SCROLL REVEAL SCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOnScroll = function() {
+                reveals.forEach(function(element) {
+                    const windowHeight = window.innerHeight;
+                    const elementTop = element.getBoundingClientRect().top;
+                    const revealPoint = 150;
+                    
+                    if (elementTop < windowHeight - revealPoint) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Initial check
+        });
+    </script>
+
+</body>
+</html>
